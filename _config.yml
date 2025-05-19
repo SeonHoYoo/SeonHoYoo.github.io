@@ -60,6 +60,11 @@ about_content: | # this will include new lines to allow paragraphs
   Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated.
 
   I am most skilled in: <mark>AWS</mark> and <mark>Eating Pizza</mark>
+  I am most interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>
+  - Self-Supervised & Pre-training on Graphs
+  - Graph-based Anomaly Detection
+  - Combinatorial Optimization on Graphs
+  - Graph-augmented Reinforcement Learning
 quote: >
   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
 
