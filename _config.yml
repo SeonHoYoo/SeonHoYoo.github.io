@@ -75,7 +75,7 @@ content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top #top-middle
+      - layout: top-middle
         title: Super awesome project
         link: github.com/SeonHoYoo
         # link_text: Project Website
@@ -91,10 +91,10 @@ content:
         description: | # this will include new lines to allow paragraphs
           I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-  - title: Experience # Title for the section
+  - title: Career # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
+      - layout: top-middle # left
         title: Supply Chain & Value Network Analytics Lab
         link: http://savanna.korea.ac.kr/wp/
         # link_text: boringcompany.com
@@ -108,14 +108,14 @@ content:
 
             **2025.03 ~ present** 
             
-            “미래형 물류 및 주선의 다중 공급망 통합 최적화 연구: 5PL 플랫폼 기반의 지능형 라스트 마일-미들 마일 통합 및 고도화 알고리즘 연구,” 한국연구재단(개인기초-중견연구)
+            "미래형 물류 및 주선의 다중 공급망 통합 최적화 연구: 5PL 플랫폼 기반의 지능형 라스트 마일-미들 마일 통합 및 고도화 알고리즘 연구", 한국연구재단(개인기초-중견연구)
 
             **2024.09 ~ 2025.01** 
             
-            “지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구,” (LINC 3.0) 산학공동기술개발과제
+            “지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구", (LINC 3.0) 산학공동기술개발과제
             - 특허출원. (10-2025-0038793) 전기 이륜차 배터리 교환소 위치 선정 방법 및 그 장치
 
-
+            <p></p>
 
             <mark>Conference Presentation.</mark>
 
