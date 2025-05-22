@@ -94,7 +94,7 @@ content:
   - title: Career # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: top-middle # left
+      - layout: top-left # left
         title: Supply Chain & Value Network Analytics Lab
         link: http://savanna.korea.ac.kr/wp/
         # link_text: boringcompany.com
@@ -115,7 +115,9 @@ content:
             “지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구", (LINC 3.0) 산학공동기술개발과제
             - 특허출원. (10-2025-0038793) 전기 이륜차 배터리 교환소 위치 선정 방법 및 그 장치
 
-            <p></p>
+
+
+
 
             <mark>Conference Presentation.</mark>
 
