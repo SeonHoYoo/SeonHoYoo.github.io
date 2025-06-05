@@ -72,7 +72,7 @@ quote: >
 
 
 content:
-  - title: Projects # Title for the section
+  - title: Curriculum Vitae # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: top-middle
@@ -91,82 +91,86 @@ content:
         description: | # this will include new lines to allow paragraphs
           I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
-  - title: Career # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: top-left # left
-        title: Supply Chain & Value Network Analytics Lab
-        link: http://savanna.korea.ac.kr/wp/
-        # link_text: boringcompany.com
-        sub_title: Research Intern
-        caption: September 2024 - Present
-        #quote: >
-          #Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-        description: | # this will include new lines to allow paragraphs
+
+
+
+
+#   - title: Career # Title for the section
+#     layout: list # Type of content section (list/text)
+#     content:
+#       - layout: top-left # left
+#         title: Supply Chain & Value Network Analytics Lab
+#         link: http://savanna.korea.ac.kr/wp/
+#         # link_text: boringcompany.com
+#         sub_title: Research Intern
+#         caption: September 2024 - Present
+#         #quote: >
+#           #Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
+#         description: | # this will include new lines to allow paragraphs
             
-            <mark>Research Projects.</mark>
+#             <mark>Research Projects.</mark>
 
-            **2025.03 ~ present** 
+#             **2025.03 ~ present** 
             
-            "미래형 물류 및 주선의 다중 공급망 통합 최적화 연구: 5PL 플랫폼 기반의 지능형 라스트 마일-미들 마일 통합 및 고도화 알고리즘 연구", 한국연구재단(개인기초-중견연구)
+#             "미래형 물류 및 주선의 다중 공급망 통합 최적화 연구: 5PL 플랫폼 기반의 지능형 라스트 마일-미들 마일 통합 및 고도화 알고리즘 연구", 한국연구재단(개인기초-중견연구)
 
-            **2024.09 ~ 2025.01** 
+#             **2024.09 ~ 2025.01** 
             
-            “지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구", (LINC 3.0) 산학공동기술개발과제
-            - 특허출원. (10-2025-0038793) 전기 이륜차 배터리 교환소 위치 선정 방법 및 그 장치
+#             “지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구", (LINC 3.0) 산학공동기술개발과제
+#             - 특허출원. (10-2025-0038793) 전기 이륜차 배터리 교환소 위치 선정 방법 및 그 장치
 
 
 
 
 
-            <mark>Conference Presentation.</mark>
+#             <mark>Conference Presentation.</mark>
 
-            **유선호**, 고광종, 김태영, 정태수 (2025) "클러스터링 및 데이터 증강 기반 전기 이륜차 배터리 교환 수요 예측 개선 연구", 2025 한국SCM학회 춘계학술대회, 서울.
+#             **유선호**, 고광종, 김태영, 정태수 (2025) "클러스터링 및 데이터 증강 기반 전기 이륜차 배터리 교환 수요 예측 개선 연구", 2025 한국SCM학회 춘계학술대회, 서울.
 
-            최무선, 고광종, 김태영, **유선호**, 주승돈, 정태수* (2024) "지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구", 2024 한국SCM학회 추계학술대회, 서울.
+#             최무선, 고광종, 김태영, **유선호**, 주승돈, 정태수* (2024) "지속가능한 도심 배달 서비스를 위한 전기 이륜차 배터리 교환소 위치 선정 연구", 2024 한국SCM학회 추계학술대회, 서울.
 
-            **유선호**, 김우혁, 원재상. (2024) "스택 및 컨베이어 변수에 따른 강화학습 기반 3차원 적재 문제의 용적률 분석", 2024 대한산업공학회 추계학술대회, 서울.
+#             **유선호**, 김우혁, 원재상. (2024) "스택 및 컨베이어 변수에 따른 강화학습 기반 3차원 적재 문제의 용적률 분석", 2024 대한산업공학회 추계학술대회, 서울.
 
-            김태영, 고광종, 최무선, **유선호**, 주승돈, 정태수* (2024) "지속가능한 도심 배달 서비스를 위한 데이터 기반의 전기 이륜차 배터리 교환소 위치 최적화", 2024 대한산업공학회 추계학술대회, 서울.
+#             김태영, 고광종, 최무선, **유선호**, 주승돈, 정태수* (2024) "지속가능한 도심 배달 서비스를 위한 데이터 기반의 전기 이륜차 배터리 교환소 위치 최적화", 2024 대한산업공학회 추계학술대회, 서울.
 
 
 
-  - title: Education # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        title: Korea University
-        caption: March 2023 - Present
-        sub_title: Industrial & Management Engineering
-        quote: >
-          Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-        description: | # this will include new lines to allow paragraphs
-          During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+#   - title: Education # Title for the section
+#     layout: list # Type of content section (list/text)
+#     content:
+#       - layout: left
+#         title: Korea University
+#         caption: March 2023 - Present
+#         sub_title: Industrial & Management Engineering
+#         quote: >
+#           Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
+#         description: | # this will include new lines to allow paragraphs
+#           During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
 
-          I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+#           I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
 
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-      - Rock climbing
-      - Gaming
-      - Knitting
-      - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+#   - title: A Little More About Me
+#     layout: text
+#     content: | # this will include new lines to allow paragraphs
+#       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
+#       - Rock climbing
+#       - Gaming
+#       - Knitting
+#       - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
 
-      Look at this cool image  
-      ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
+#       Look at this cool image  
+#       ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
 
-# Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+# # Footer
+# footer_show_references: true
+# # references_title: References on request (Override references text)
 
-# Build settings
-remote_theme: sproogen/resume-theme
+# # Build settings
+# remote_theme: sproogen/resume-theme
 
-sass:
-  sass_dir: _sass
-  style: compressed
+# sass:
+#   sass_dir: _sass
+#   style: compressed
 
-plugins:
- - jekyll-seo-tag
+# plugins:
+#  - jekyll-seo-tag
