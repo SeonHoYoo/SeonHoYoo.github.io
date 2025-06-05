@@ -55,9 +55,11 @@ linkedin_username: seonhoyoo
 
 # About Section
 # about_title: About Me
+
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated.
+  Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated.  
+  This is <a href="/assets/SeonHoYoo_CV.pdf" target="_blank" rel="noopener">my curriculum vitae</a>, showcasing the journey I have taken so far toward that vision.
 
   I am most interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
   - Self-Supervised & Pre-training on Graphs
@@ -67,23 +69,41 @@ about_content: | # this will include new lines to allow paragraphs
 quote: >
   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
 
-content:
-  - title: Curriculum Vitae
-    layout: list
-    content:
-      - layout: top-middle
-        title: Curriculum Vitae (PDF)
-        link: /assets/SeonHoYoo_CV.pdf  # PDF 파일 경로
-        link_text: View Full CV
-        additional_links:
-          - title: sproogen/modern-resume-theme
-            icon: fab fa-github
-            url: https://github.com/sproogen/modern-resume-theme
-        quote: >
-          A comprehensive overview of my academic, research, and leadership experiences.
-        description: |
-          This resume includes my background in industrial engineering, research in supply chain and AI,
-          and leadership as vice president of the student council.
+
+
+
+
+
+
+# about_profile_image: images/profile.jpg
+# about_content: | # this will include new lines to allow paragraphs
+#   Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated. This is my curriculum vitae, showcasing the journey I have taken so far toward that vision.
+
+#   I am most interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
+#   - Self-Supervised & Pre-training on Graphs
+#   - Graph-based Anomaly Detection
+#   - Combinatorial Optimization on Graphs
+#   - Graph-augmented Reinforcement Learning
+# quote: >
+#   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+
+# content:
+#   - title: Curriculum Vitae
+#     layout: list
+#     content:
+#       - layout: top-middle
+#         title: Curriculum Vitae (PDF)
+#         link: /assets/SeonHoYoo_CV.pdf  # PDF 파일 경로
+#         link_text: View Full CV
+#         additional_links:
+#           - title: sproogen/modern-resume-theme
+#             icon: fab fa-github
+#             url: https://github.com/sproogen/modern-resume-theme
+#         quote: >
+#           A comprehensive overview of my academic, research, and leadership experiences.
+#         description: |
+#           This resume includes my background in industrial engineering, research in supply chain and AI,
+#           and leadership as vice president of the student council.
 
 
 
