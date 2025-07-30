@@ -59,7 +59,7 @@ linkedin_username: seonhoyoo
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated.  
-  This is <a href="/assets/SeonHoYoo_CV.pdf" target="_blank" rel="noopener">my curriculum vitae</a>, showcasing the journey I have taken so far toward that vision.
+  This is <a href="/assets/CV_250731.pdf" target="_blank" rel="noopener">my curriculum vitae</a>, showcasing the journey I have taken so far toward that vision.
 
   I am most interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
   - Self-Supervised & Pre-training on Graphs
