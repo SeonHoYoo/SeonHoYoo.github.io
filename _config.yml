@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: SeonHo Yoo
-title: Researcher in AI & Optimization
+title: Industrial AI Researcher
 email: leoyoo2004@korea.ac.kr
 website: www.github.com/SeonHoYoo
 
@@ -22,14 +22,14 @@ linkedin_username: seonhoyoo
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  I am SeonHo Yoo, an undergraduate researcher at Korea University interested in **graph machine learning**, **anomaly detection**, and **optimization for machine learning**.
+  I am SeonHo Yoo, an industrial AI researcher at Korea University working on **reliable machine learning**, **anomaly detection**, and **optimization-informed AI** for industrial applications.
 
-  My research focuses on building reliable and efficient AI systems for structured data and decision-making problems. I am particularly interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
+  My research aims to develop trustworthy and efficient AI methods for structured data and operational decision-making problems. I am particularly interested in <mark>Reliable AI for Complex Systems</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
 
-  - Self-Supervised & Pre-training on Graphs
-  - Graph-based Anomaly Detection
-  - Combinatorial Optimization on Graphs
-  - Graph-augmented Reinforcement Learning
+  - Anomaly Detection and Robust Predictive Modeling
+  - Optimization-aware Learning and Decision-making
+  - AI for Operations and Industrial Systems
+  - Data-centric Methods for Real-world Applications
 
   You can view my <a href="/assets/SeonHoYoo_CV.pdf" target="_blank" rel="noopener">CV here</a>.
 quote: >
