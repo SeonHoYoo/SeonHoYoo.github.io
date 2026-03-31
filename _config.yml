@@ -89,33 +89,33 @@ content:
     content:
       - layout: top
         title: Journal Publications
-        description: |
-          **Domestic**
-          - 
-          **International**
-          - 
+        description: |  
+          **Domestic**  
+          - a
+          **International**  
+          - a
       - layout: top
         title: Presentations
         description: |
-          **Domestic**
-          - 
-          **International**
-          - 
+          **Domestic**  
+          - a
+          **International**  
+          - a
       - layout: top
         title: Competitions
         description: |
-          **Domestic**
-          - 
-          **International**
-          - 
+          **Domestic**  
+          - a
+          **International**  
+          - a
 
       - layout: top
         title: Honors
         description: |
-          **Domestic**
-          - 
-          **International**
-          - 
+          **Domestic**  
+          - a
+          **International**  
+          - a
 
 
 
