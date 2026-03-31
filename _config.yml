@@ -60,9 +60,9 @@ content:
       - layout: left
         title: SKIML Lab
         sub_title: Research Intern
+                   Structure & Knowledge Injection into Machine Learning Lab, Seoul National University  
         caption: Jul. 2025 - Jun. 2026
         description: |
-          Structure & Knowledge Injection into Machine Learning Lab, Seoul National University  
           
           **Research Area**
           - Graph-based Reasoning, Multi-hop Question Answering, Protein Structure Prediction
