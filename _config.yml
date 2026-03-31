@@ -59,11 +59,8 @@ content:
     content:
       - layout: left
         title: SKIML Lab
-        sub_title: Research Intern  
-                   <span style="font-size: 0.9em; color: #666;">
-                   Structure & Knowledge Injection into Machine Learning Lab<br>
-                   Seoul National University</span>
-
+        sub_title: Research Intern
+        link: https://skiml.snu.ac.kr/
         caption: Jul. 2025 - Jun. 2026
         description: |
           
@@ -77,9 +74,9 @@ content:
       - layout: left
         title: SAVANNA Lab
         sub_title: Research Intern
+        link: https://savana.korea.ac.kr/
         caption: Sep. 2024 - Jun. 2025
         description: |
-          Supply Chain & Value Network Analytics Lab, Korea University  
           
           **Research Area**
           - Semi-supervised Learning, Data Augmentation, Demand Forecasting, Optimization
