@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: SeonHo Yoo
-title: Artificial Intelligence Researcher
+title: Undergraduate Researcher in AI & Optimization
 email: leoyoo2004@korea.ac.kr
 website: www.github.com/SeonHoYoo
 
@@ -15,155 +15,193 @@ website: www.github.com/SeonHoYoo
 darkmode: never
 
 # Social links
-# ## twitter_username: facespics
 github_username: SeonHoYoo
-# stackoverflow_username: "00000001"
-# dribbble_username: jekyll
-# facebook_username: jekyll
-# flickr_username: jekyll
 instagram_username: db_prefer
 linkedin_username: seonhoyoo
-# xing_username: jekyll
-# pinterest_username: jekyll
-# ## youtube_username: globalmtb
-# googleplus_username: +jekyll
-# orcid_username: 0000-0000-0000-0000
-
-# Additional icon links
-
-
-
-
-#additional_links:
-#- title: itsgoingto.be
-#  icon: fas fa-globe
-#  url: https://www.itsgoingto.be
-
-
-
-
-
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&m=free)
-#   url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
 
 # About Section
-# about_title: About Me
-
 about_profile_image: images/profile.jpg
-about_content: | # this will include new lines to allow paragraphs
-  Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated.  
-  This is <a href="/assets/CV_250731.pdf" target="_blank" rel="noopener">my curriculum vitae</a>, showcasing the journey I have taken so far toward that vision.
+about_content: |
+  I am SeonHo Yoo, an undergraduate researcher at Korea University interested in **graph machine learning**, **anomaly detection**, and **optimization for machine learning**.
 
-  I am most interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
+  My research focuses on building reliable and efficient AI systems for structured data and decision-making problems. I am particularly interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
+
   - Self-Supervised & Pre-training on Graphs
   - Graph-based Anomaly Detection
   - Combinatorial Optimization on Graphs
   - Graph-augmented Reinforcement Learning
+
+  You can view my <a href="/assets/SeonHoYoo_CV.pdf" target="_blank" rel="noopener">CV here</a>.
 quote: >
-  This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
 
+content:
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Korea University
+        sub_title: B.S. in Industrial & Management Engineering
+        caption: March 2023 - Present
+        description: |
+          Undergraduate student in Industrial & Management Engineering at Korea University.
 
+          - Expected early graduation in Fall 2025
+          - Interested in AI, graph machine learning, and optimization
+          - Based in Seoul, South Korea
 
+          <a href="/undergrad-activities/" target="_blank" rel="noopener">View undergraduate activities</a>
 
+  - title: Career
+    layout: list
+    content:
+      - layout: top-left
+        title: Supply Chain & Value Network Analytics Lab
+        link: http://savanna.korea.ac.kr/wp/
+        sub_title: Research Intern
+        caption: Sep. 2024 - Present
+        description: |
+          Working on research at the intersection of supply chain analytics, forecasting, and optimization.
 
+          <mark>Research Projects</mark>
+          - Integrated Optimization of Future Logistics and Freight Brokerage in Multi-Supply Chain Systems: Development of Intelligent Last-Mile and Middle-Mile Algorithms Based on 5PL Platforms (2025.03 - Present)
+          - Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Sustainable Urban Delivery Services, Industry-Academia Joint Technology Development Project (LINC 3.0) (2024.09 - 2025.01)
 
+  - title: Journal Publications
+    layout: list
+    content:
+      - layout: top-left
+        title: Triple-Strategy Margin-Filtered Pseudo-Labeling for Demand Forecasting of Electric Two-Wheeler Battery Swapping Stations
+        sub_title: Manuscript in preparation
+        caption: 2025
+        description: |
+          - Project lead
+          - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
+          - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
+          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
 
-# about_profile_image: images/profile.jpg
-# about_content: | # this will include new lines to allow paragraphs
-#   Hi, my name is SeonHo Yoo, and I aspire to become an **AI researcher** who is **boundless**, **growth-driven**, and **irreplaceable**. I constantly challenge my own limits, seek opportunities to evolve through every experience, and strive to build a unique value that cannot be replicated. This is my curriculum vitae, showcasing the journey I have taken so far toward that vision.
+  - title: Presentations
+    layout: list
+    content:
+      - layout: top-left
+        title: Improving Electric Two-Wheeler Battery Swap Demand Forecasting via Clustering and Data Augmentation
+        sub_title: Korean Society of Supply Chain Management (SCM), Spring Conference
+        caption: 2025
+        description: |
+          Yoo, S., Ko, K., Kim, T., Jeong, T. (2025). Presented in Seoul, Korea.
 
-#   I am most interested in <mark>Graph-driven Representation & Decision Making</mark> and <mark>Mathematical Optimization for Machine Learning</mark>.
-#   - Self-Supervised & Pre-training on Graphs
-#   - Graph-based Anomaly Detection
-#   - Combinatorial Optimization on Graphs
-#   - Graph-augmented Reinforcement Learning
-# quote: >
-#   This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+      - layout: top-left
+        title: Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Sustainable Urban Delivery Services
+        sub_title: Korean Society of SCM, Fall Conference
+        caption: 2024
+        description: |
+          Choi, M., Ko, K., Kim, T., Yoo, S., Joo, S., Jeong, T. (2024). Presented in Seoul, Korea.
 
-# content:
-#   - title: Curriculum Vitae
-#     layout: list
-#     content:
-#       - layout: top-middle
-#         title: Curriculum Vitae (PDF)
-#         link: /assets/SeonHoYoo_CV.pdf  # PDF 파일 경로
-#         link_text: View Full CV
-#         additional_links:
-#           - title: sproogen/modern-resume-theme
-#             icon: fab fa-github
-#             url: https://github.com/sproogen/modern-resume-theme
-#         quote: >
-#           A comprehensive overview of my academic, research, and leadership experiences.
-#         description: |
-#           This resume includes my background in industrial engineering, research in supply chain and AI,
-#           and leadership as vice president of the student council.
+      - layout: top-left
+        title: Data-Driven Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Urban Delivery Services
+        sub_title: Korean Institute of Industrial Engineers (KIIE), Fall Conference
+        caption: 2024
+        description: |
+          Kim, T., Ko, K., Choi, M., Yoo, S., Joo, S., Jeong, T. (2024). Presented in Seoul, Korea.
 
+      - layout: top-left
+        title: Reinforcement Learning-Based Analysis of Volume Efficiency in 3D Bin Packing with Stack and Conveyor Variables
+        sub_title: Korean Institute of Industrial Engineers (KIIE), Fall Conference
+        caption: 2024
+        description: |
+          Presented research on logistics-aware 3D bin packing and reinforcement learning-based simulation.
 
+  - title: Competition
+    layout: list
+    content:
+      - layout: top-left
+        title: 20th University Students Industrial Engineering Project Competition
+        sub_title: Bronze Prize
+        caption: 2024
+        description: |
+          Awarded by the Korean Institute of Industrial Engineers (KIIE).
 
+      - layout: top-left
+        title: KU-Yonsei Joint Industrial Engineering Academic Exchange Festival
+        sub_title: Excellence Prize
+        caption: 2024
+        description: |
+          Received Excellence Prize.
 
+      - layout: top-left
+        title: FIELD CAMP Competition - Optimization of Public Education Facility Locations
+        sub_title: Excellence Prize
+        caption: 2023
+        description: |
+          Awarded by the Korean Institute of Industrial Engineers (KIIE).
 
-#   - title: Career # Title for the section
-#     layout: list # Type of content section (list/text)
-#     content:
-#       - layout: top-left # left
-#         title: Supply Chain & Value Network Analytics Lab
-#         link: http://savanna.korea.ac.kr/wp/
-#         # link_text: boringcompany.com
-#         sub_title: Research Intern
-#         caption: September 2024 - Present
-#         #quote: >
-#           #Solving 21st century problems by diging holes and making game changing products like the *not a flamethrower*
-#         description: | # this will include new lines to allow paragraphs
-            
-#             <mark>Research Projects.</mark>
+      - layout: top-left
+        title: 67th Korea National Science Exhibition
+        sub_title: Excellence Prize
+        caption: 2021
+        description: |
+          Ministry of Trade, Industry and Energy, South Korea.
 
+  - title: Honor
+    layout: list
+    content:
+      - layout: top-left
+        title: Presidential Science Scholarship
+        sub_title: Appointed
+        caption: 2025
+        description: |
+          Ministry of Science and ICT
 
+      - layout: top-left
+        title: Academic Excellence Award
+        sub_title: Korea University
+        caption: 2024
+        description: |
+          Awarded for academic excellence.
 
+      - layout: top-left
+        title: Sang-Ah Scholarship Foundation
+        sub_title: Scholarship Recipient
+        caption: 2024
+        description: |
+          Appointed as scholarship recipient.
 
+      - layout: top-left
+        title: Intellectual Property Camp
+        sub_title: Completed
+        caption: 2024
+        description: |
+          Department of Industrial & Management Engineering, Korea University
 
-#   - title: Education # Title for the section
-#     layout: list # Type of content section (list/text)
-#     content:
-#       - layout: left
-#         title: Korea University
-#         caption: March 2023 - Present
-#         sub_title: Industrial & Management Engineering
-#         quote: >
-#           Established in 1636, Harvard is the oldest higher education institution in the United States, and is widely regarded in terms of its influence, reputation, and academic pedigree as a leading university in not just the US but also the world.
-#         description: | # this will include new lines to allow paragraphs
-#           During my time at Harvard I learnt most of my key skills that have I have taken through my career such as teamwork and working to tight deadlines. I thouroughly enjoyed my time as university and learnt a lot about a healthy work life balance.
+      - layout: top-left
+        title: Creative Challenger Program
+        sub_title: Completed
+        caption: 2023
+        description: |
+          Korea University
 
-#           I spent a lot of my free time as a committee member of the *Harvard Mountaineering Club* taking on roles such as *Trip Secretary* and *Vice-President*.
+      - layout: top-left
+        title: Codeit University Coding Bootcamp (12th Cohort)
+        sub_title: Completed
+        caption: 2023
+        description: |
+          Completed the program.
 
-#   - title: A Little More About Me
-#     layout: text
-#     content: | # this will include new lines to allow paragraphs
-#       Alongside my interests in networks and software engineering some of my other interests and hobbies are:
-#       - Rock climbing
-#       - Gaming
-#       - Knitting
-#       - [Becoming a ninja](https://www.youtube.com/watch?v=vtg4o__aRMg)
+      - layout: top-left
+        title: Academic Excellence Award
+        sub_title: Korea University
+        caption: 2023
+        description: |
+          Awarded for academic excellence.
 
-#       Look at this cool image  
-#       ![Trees](/modern-resume-theme/images/landscape-trees.jpg "Trees")
-
-# # Footer
+# Footer
 footer_show_references: true
-# # references_title: References on request (Override references text)
 
-# # Build settings
+# Build settings
 remote_theme: sproogen/resume-theme
 
 sass:
-sass_dir: _sass
-style: compressed
+  sass_dir: _sass
+  style: compressed
 
 plugins:
-- jekyll-seo-tag
+  - jekyll-seo-tag
