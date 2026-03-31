@@ -88,7 +88,7 @@ content:
   - title: Journal Publications
     layout: list
     content:
-      - layout: left
+      - layout: top
         title: TriMa pseudo-labeling (manuscript)
         sub_title: Triple-Strategy Margin-Filtered Pseudo-Labeling for Demand Forecasting of Electric Two-Wheeler Battery Swapping Stations
         caption: 2025
