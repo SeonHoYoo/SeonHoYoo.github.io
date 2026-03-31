@@ -59,7 +59,7 @@ content:
     content:
       - layout: left
         title: SKIML Lab
-        sub_title: Research Intern
+        sub_title: Research Intern  
                    <span style="font-size: 0.9em; color: #666;">
                    Structure & Knowledge Injection into Machine Learning Lab<br>
                    Seoul National University</span>
