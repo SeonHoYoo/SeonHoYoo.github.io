@@ -92,38 +92,28 @@ content:
         description: |  
           
           **Domestic**  
-          - a  
+          -   
             
           **International**  
-          - a  
+          -   
       - layout: top
         title: Presentations
         description: |
           
           **Domestic**  
-          - a  
+          -   
             
           **International**  
-          - a  
+          -   
       - layout: top
         title: Competitions
         description: |
-          
-          **Domestic**  
-          - a  
-            
-          **International**  
-          - a  
+          -    
 
       - layout: top
         title: Honors
         description: |
-          
-          **Domestic**  
-          - a  
-            
-          **International**  
-          - a  
+          - 
 
 
 
