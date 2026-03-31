@@ -7,7 +7,7 @@ version: 2
 
 # Personal info
 name: SeonHo Yoo
-title: Undergraduate Researcher in AI & Optimization
+title: Researcher in AI & Optimization
 email: leoyoo2004@korea.ac.kr
 website: www.github.com/SeonHoYoo
 
@@ -40,16 +40,19 @@ content:
     content:
       - layout: left
         title: Korea University
-        sub_title: B.S. in Industrial & Management Engineering
-        caption: March 2023 - Present
+        sub_title: Integrated B.S./M.S./Ph.D. in Industrial & Management Engineering
+        caption: Mar. 2023 - Present
         description: |
-          Undergraduate student in Industrial & Management Engineering at Korea University.
+          B.S. in Industrial & Management Engineering (2023 - 2026)
 
-          - Expected early graduation in Fall 2025
-          - Interested in AI, graph machine learning, and optimization
-          - Based in Seoul, South Korea
+          - Completed all credit requirements for graduation in Feb 2026.
+          - <a href="/undergrad-activities/" target="_blank" rel="noopener">View undergraduate activities</a>
+          
+          Integrated M.S./Ph.D. in Industrial & Management Engineering (2027 - )
 
-          <a href="/undergrad-activities/" target="_blank" rel="noopener">View undergraduate activities</a>
+          - Expected to enter the Integrated B.S./M.S./Ph.D. Program in Sep 2026.
+        
+
 
   - title: Career
     layout: list
