@@ -84,132 +84,39 @@ content:
           - Integrated Optimization of Future Logistics and Freight Brokerage in Multi‑Supply Chain Systems: Development of Intelligent Last‑Mile and Middle‑Mile Algorithms Based on 5PL Platforms
           - Location Optimization of Battery Swapping Stations for Electric Two‑Wheelers in Sustainable Urban Delivery Services Industry‑Academia Joint Technology Development Project (LINC 3.0)
 
-  - title: Journal Publications
+  - title: Achievements
     layout: list
     content:
       - layout: top
-        title: TriMa pseudo-labeling (manuscript)
-        sub_title: Triple-Strategy Margin-Filtered Pseudo-Labeling for Demand Forecasting of Electric Two-Wheeler Battery Swapping Stations
-        caption: 2025
+        title: Journal Publications
         description: |
           - Project lead
           - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
           - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
           - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
-
-  - title: Presentations
-    layout: list
-    content:
       - layout: top
-        title: Improving Electric Two-Wheeler Battery Swap Demand Forecasting via Clustering and Data Augmentation
-        sub_title: Korean Society of Supply Chain Management (SCM), Spring Conference
-        caption: 2025
+        title: Presentations
         description: |
-          Yoo, S., Ko, K., Kim, T., Jeong, T. (2025). Presented in Seoul, Korea.
-
+          - Project lead
+          - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
+          - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
+          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
       - layout: top
-        title: Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Sustainable Urban Delivery Services
-        sub_title: Korean Society of SCM, Fall Conference
-        caption: 2024
+        title: Competitions
         description: |
-          Choi, M., Ko, K., Kim, T., Yoo, S., Joo, S., Jeong, T. (2024). Presented in Seoul, Korea.
-
+          - Project lead
+          - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
+          - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
+          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
       - layout: top
-        title: Data-Driven Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Urban Delivery Services
-        sub_title: Korean Institute of Industrial Engineers (KIIE), Fall Conference
-        caption: 2024
+        title: Honors
         description: |
-          Kim, T., Ko, K., Choi, M., Yoo, S., Joo, S., Jeong, T. (2024). Presented in Seoul, Korea.
+          Project lead  
+          Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training  
+          Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion  
+          Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**  
 
-      - layout: top
-        title: Reinforcement Learning-Based Analysis of Volume Efficiency in 3D Bin Packing with Stack and Conveyor Variables
-        sub_title: Korean Institute of Industrial Engineers (KIIE), Fall Conference
-        caption: 2024
-        description: |
-          Presented research on logistics-aware 3D bin packing and reinforcement learning-based simulation.
 
-  - title: Competition
-    layout: list
-    content:
-      - layout: top
-        title: 20th University Students Industrial Engineering Project Competition
-        sub_title: Bronze Prize
-        caption: 2024
-        description: |
-          Awarded by the Korean Institute of Industrial Engineers (KIIE).
-
-      - layout: top
-        title: KU-Yonsei Joint Industrial Engineering Academic Exchange Festival
-        sub_title: Excellence Prize
-        caption: 2024
-        description: |
-          Received Excellence Prize.
-
-      - layout: top
-        title: FIELD CAMP Competition - Optimization of Public Education Facility Locations
-        sub_title: Excellence Prize
-        caption: 2023
-        description: |
-          Awarded by the Korean Institute of Industrial Engineers (KIIE).
-
-      - layout: top
-        title: 67th Korea National Science Exhibition
-        sub_title: Excellence Prize
-        caption: 2021
-        description: |
-          Ministry of Trade, Industry and Energy, South Korea.
-
-  - title: Honor
-    layout: list
-    content:
-      - layout: top
-        title: Presidential Science Scholarship
-        sub_title: Appointed
-        caption: 2025
-        description: |
-          Ministry of Science and ICT
-
-      - layout: top
-        title: Academic Excellence Award
-        sub_title: Korea University
-        caption: 2024
-        description: |
-          Awarded for academic excellence.
-
-      - layout: top
-        title: Sang-Ah Scholarship Foundation
-        sub_title: Scholarship Recipient
-        caption: 2024
-        description: |
-          Appointed as scholarship recipient.
-
-      - layout: top
-        title: Intellectual Property Camp
-        sub_title: Completed
-        caption: 2024
-        description: |
-          Department of Industrial & Management Engineering, Korea University
-
-      - layout: top
-        title: Creative Challenger Program
-        sub_title: Completed
-        caption: 2023
-        description: |
-          Korea University
-
-      - layout: top
-        title: Codeit University Coding Bootcamp (12th Cohort)
-        sub_title: Completed
-        caption: 2023
-        description: |
-          Completed the program.
-
-      - layout: top
-        title: Academic Excellence Award
-        sub_title: Korea University
-        caption: 2023
-        description: |
-          Awarded for academic excellence.
 
 # Footer
 footer_show_references: true
