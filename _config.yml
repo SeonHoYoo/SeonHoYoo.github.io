@@ -63,10 +63,10 @@ content:
         caption: Jul. 2025 - Jun. 2026
                  **Seoul National University**
         description: |
-          <bold>Research Area</bold>
+          **Research Area**
           Graph-based Reasoning, Multi-hop Question Answering, Protein Structure Prediction
 
-          <mark>Research Projects</mark>
+          **Research Projects**
           - Designed a robust modeling framework for multi-hop QA by leveraging graph structures in the verification process
           - Developed an energy-based model for evaluating protein decoys, enabling quantitative assessment of structural plausibility
     
@@ -76,10 +76,10 @@ content:
         caption: Sep. 2024 - Jun. 2025
         caption: _Korea University_
         description: |
-          <bold>Research Area</bold>
+          **Research Area**
           Semi-supervised Learning, Data Augmentation, Demand Forecasting, Optimization
 
-          <mark>Research Projects</mark>
+          **Research Projects**
           - Integrated Optimization of Future Logistics and Freight Brokerage in Multi‑Supply Chain Systems: Development of Intelligent Last‑Mile and Middle‑Mile Algorithms Based on 5PL Platforms
           - Location Optimization of Battery Swapping Stations for Electric Two‑Wheelers in Sustainable Urban Delivery Services Industry‑Academia Joint Technology Development Project (LINC 3.0)
 
@@ -87,14 +87,14 @@ content:
     layout: list
     content:
       - layout: left
-        title: TriMa pseudo-labeling (2025)
-        sub_title: Manuscript in preparation
-        caption: Journal of the Korean Institute of Industrial Engineers (KIIE)
+        title: TriMa pseudo-labeling (manuscript)
+        sub_title: Triple-Strategy Margin-Filtered Pseudo-Labeling for Demand Forecasting of Electric Two-Wheeler Battery Swapping Stations
+        caption: 2025
         description: |
           - Project lead
           - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
           - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
-
+          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
 
   - title: Presentations
     layout: list
