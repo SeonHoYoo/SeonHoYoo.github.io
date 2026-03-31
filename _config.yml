@@ -90,32 +90,36 @@ content:
       - layout: top
         title: Journal Publications
         description: |  
+          
           **Domestic**  
-          - a
+          - a  
           **International**  
-          - a
+          - a  
       - layout: top
         title: Presentations
         description: |
+          
           **Domestic**  
-          - a
+          - a  
           **International**  
-          - a
+          - a  
       - layout: top
         title: Competitions
         description: |
+          
           **Domestic**  
-          - a
+          - a  
           **International**  
-          - a
+          - a  
 
       - layout: top
         title: Honors
         description: |
+          
           **Domestic**  
-          - a
+          - a  
           **International**  
-          - a
+          - a  
 
 
 
