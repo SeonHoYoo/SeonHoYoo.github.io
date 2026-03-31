@@ -58,26 +58,28 @@ content:
     layout: list
     content:
       - layout: left
-        title: Structure & Knowledge Injection into Machine Learning Lab
+        title: SKIML Lab
         sub_title: Research Intern
         caption: Jul. 2025 - Jun. 2026
-                 **Seoul National University**
+                 Seoul National University
         description: |
+          Structure & Knowledge Injection into Machine Learning Lab, Seoul National University
           **Research Area**
-          Graph-based Reasoning, Multi-hop Question Answering, Protein Structure Prediction
+          - Graph-based Reasoning, Multi-hop Question Answering, Protein Structure Prediction
 
           **Research Projects**
           - Designed a robust modeling framework for multi-hop QA by leveraging graph structures in the verification process
           - Developed an energy-based model for evaluating protein decoys, enabling quantitative assessment of structural plausibility
     
       - layout: left
-        title: Supply Chain & Value Network Analytics Lab
+        title: SAVANNA Lab
         sub_title: Research Intern
         caption: Sep. 2024 - Jun. 2025
-        caption: _Korea University_
+        caption: Korea University
         description: |
+          Supply Chain & Value Network Analytics Lab, Korea University
           **Research Area**
-          Semi-supervised Learning, Data Augmentation, Demand Forecasting, Optimization
+          - Semi-supervised Learning, Data Augmentation, Demand Forecasting, Optimization
 
           **Research Projects**
           - Integrated Optimization of Future Logistics and Freight Brokerage in Multi‑Supply Chain Systems: Development of Intelligent Last‑Mile and Middle‑Mile Algorithms Based on 5PL Platforms
