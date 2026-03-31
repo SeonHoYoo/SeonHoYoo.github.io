@@ -60,7 +60,10 @@ content:
       - layout: left
         title: SKIML Lab
         sub_title: Research Intern
-                   Structure & Knowledge Injection into Machine Learning Lab, Seoul National University  
+                   <span style="font-size: 0.9em; color: #666;">
+                   Structure & Knowledge Injection into Machine Learning Lab<br>
+                   Seoul National University</span>
+
         caption: Jul. 2025 - Jun. 2026
         description: |
           
