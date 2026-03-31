@@ -37,6 +37,7 @@
 3. For style changes, target `assets/main.scss` and avoid editing remote theme internals.
 
 ## 7) Example edits
+- Add new career bullet in `_config.yml` under `content: - title: Career`.
 - Update profile image reference: `about_profile_image: images/profile.jpg`.
 - Add project page by creating `.md` file with front matter `layout: default` and reference in nav.
 
