@@ -90,31 +90,32 @@ content:
       - layout: top
         title: Journal Publications
         description: |
-          - Project lead
-          - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
-          - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
-          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
+          **Domestic**
+          - 
+          **International**
+          - 
       - layout: top
         title: Presentations
         description: |
-          - Project lead
-          - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
-          - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
-          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
+          **Domestic**
+          - 
+          **International**
+          - 
       - layout: top
         title: Competitions
         description: |
-          - Project lead
-          - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
-          - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
-          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
+          **Domestic**
+          - 
+          **International**
+          - 
+
       - layout: top
         title: Honors
         description: |
-          Project lead  
-          Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training  
-          Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion  
-          Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**  
+          **Domestic**
+          - 
+          **International**
+          - 
 
 
 
