@@ -61,7 +61,7 @@ content:
         title: Structure & Knowledge Injection into Machine Learning Lab
         sub_title: Research Intern
         caption: Jul. 2025 - Jun. 2026
-        caption: _Seoul National University_
+                 **Seoul National University**
         description: |
           <bold>Research Area</bold>
           Graph-based Reasoning, Multi-hop Question Answering, Protein Structure Prediction
@@ -87,14 +87,14 @@ content:
     layout: list
     content:
       - layout: left
-        title: TriMa pseudo-labeling (manuscript)
-        sub_title: Triple-Strategy Margin-Filtered Pseudo-Labeling for Demand Forecasting of Electric Two-Wheeler Battery Swapping Stations
-        caption: 2025
+        title: TriMa pseudo-labeling (2025)
+        sub_title: Manuscript in preparation
+        caption: Journal of the Korean Institute of Industrial Engineers (KIIE)
         description: |
           - Project lead
           - Developed TriMa, a pseudo-labeling framework integrating static, dynamic, and entropy-based self-training
           - Extended prediction to regions without historical data using robust augmentation and high-confidence pseudo-label fusion
-          - Manuscript in preparation for submission to the **Journal of the Korean Institute of Industrial Engineers (KIIE)**
+
 
   - title: Presentations
     layout: list
