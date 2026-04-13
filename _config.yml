@@ -98,13 +98,20 @@ content:
         description: |
           
           **Domestic**
-          -  **Yoo, S.**, Kim, T. (2025). A Study on Multilateral Transportation Matching in a 5PL Logistics Platform Considering Robust Equilibrium Price Determination, Fall Conference, Korean Society of Logistics (KSCL), Seoul, Korea.
           -  Ko, K., Cha, H., Kim, T., **Yoo, S.**, Jeong, T.* (2025). A Study on Multilateral Transportation Matching and Equilibrium Price Determination in a 5PL Logistics Platform Environment. Fall Conference, Korean Institute of Industrial Engineers (KIIE), Daejeon, Korea.
           -  **Yoo,S.**, Ko, K., Kim, T., Jeong, T.* (2025). Improving Electric Two‑Wheeler Battery Swap Demand Forecasting via Clustering and Data Augmentation. Spring Conference, Korean Society of Supply Chain Management (SCM), Seoul, Korea.
           -  Choi, M., Ko, K., Kim, T., **Yoo, S.**, Joo, S., Jeong, T.* (2024). Location Optimization of Battery Swapping Stations for Electric Two‑Wheelers in Sustainable Urban Delivery Services. Fall Conference, Korean Society of SCM, Seoul, Korea.
-          -  **Yoo, S.**, Kim, W., Won, J. (2024). Volume Utilization Analysis of a Reinforcement Learning-Based Three-Dimensional Packing Problem According to Stack and Conveyor Variables. Fall Conference, Korean Institute of Industrial Engineers (KIIE), Seoul, Korea.
           -  Kim, T., Ko, K., Choi, M., **Yoo, S.**, Joo, S., Jeong, T.* (2024). Data‑Driven Location Optimization of Battery Swapping Stations for Electric Two Wheelers in Urban Delivery Services. Fall Conference, Korean Institute of Industrial Engineers (KIIE), Seoul, Korea.           
 
+      - layout: top
+        title: Competitions
+        description: |
+          
+          **Domestic**
+          -  **Yoo, S.**, Kim, T. (2025). A Study on Multilateral Transportation Matching in a 5PL Logistics Platform Considering Robust Equilibrium Price Determination, Fall Conference, Korean Society of Logistics (KSCL), Seoul, Korea.
+          -  Finalist, Edge AI Developer Hackathon: Innovating On-Device Intelligence, Qualcomm, Korea, 2025, with the project “Paperclip: A Tone-Sensitive Writing Assistant for Clear and Culturally Appropriate Messaging.” <a href="https://github.com/yeonhj0507/Paperclip" target="_blank" rel="noopener">View Project Repository</a>
+          -  **Yoo, S.**, Kim, W., Won, J. (2024). Volume Utilization Analysis of a Reinforcement Learning-Based Three-Dimensional Packing Problem According to Stack and Conveyor Variables. Fall Conference, Korean Institute of Industrial Engineers (KIIE), Seoul, Korea.
+          -  Outstanding Award, Field Camp Competition, Korean Institute of Industrial Engineers (KIIE), 2023. Project: “Optimal Location of Public Educational Facilities through Analysis of the School-Age Population.”    
 
       - layout: top
         title: Honors
