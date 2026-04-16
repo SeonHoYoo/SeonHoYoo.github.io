@@ -22,7 +22,7 @@ linkedin_username: seonhoyoo
 # About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  I am SeonHo Yoo, an industrial AI researcher at Korea University working on **reliable machine learning**, **anomaly detection**, and **optimization-informed AI** for industrial applications.  
+  I am SeonHo Yoo, an industrial AI researcher at Korea University focusing on reliable machine learning, anomaly detection, and optimization-informed multi-agent AI for real-world industrial systems.
   My research aims to develop trustworthy and efficient AI methods for structured data and operational decision-making problems.
 
   - Anomaly Detection and Robust Predictive Modeling
