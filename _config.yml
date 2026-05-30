@@ -35,30 +35,6 @@ about_content: |
 quote: >
 
 content:
-  - title: Education
-    layout: list
-    content:
-      - layout: left
-        title: Korea University
-        sub_title: Integrated M.S./Ph.D. in Industrial & Management Engineering
-        caption: Mar. 2027 - 
-        description: |
-          Advisor: Prof. Seokhyun Chung
-          
-          Entered the graduate track through the Integrated B.S./M.S./Ph.D. Program in Jul 2026.
-          
-      - layout: left
-        title: Korea University
-        sub_title: B.S. in Industrial & Management Engineering
-        caption: Mar. 2023 - Feb. 2027
-        description: |
-          Completed all credit requirements for graduation in Feb 2026.
-
-          Expected to enter the Integrated B.S./M.S./Ph.D. Program in Jul 2026.
-
-        
-
-
   - title: Career
     layout: list
     content:
@@ -102,6 +78,27 @@ content:
           **Research Projects**
           - Integrated Optimization of Future Logistics and Freight Brokerage in Multi‑Supply Chain Systems: Development of Intelligent Last‑Mile and Middle‑Mile Algorithms Based on 5PL Platforms
           - Location Optimization of Battery Swapping Stations for Electric Two‑Wheelers in Sustainable Urban Delivery Services Industry‑Academia Joint Technology Development Project (LINC 3.0)
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: Korea University
+        sub_title: Integrated M.S./Ph.D. in Industrial & Management Engineering
+        caption: Mar. 2027 - 
+        description: |
+          Advisor: Prof. Seokhyun Chung
+          
+          Entered the graduate track through the Integrated B.S./M.S./Ph.D. Program in Jul 2026.
+          
+      - layout: left
+        title: Korea University
+        sub_title: B.S. in Industrial & Management Engineering
+        caption: Mar. 2023 - Feb. 2027
+        description: |
+          Completed all credit requirements for graduation in Feb 2026.
+
+          Expected to enter the Integrated B.S./M.S./Ph.D. Program in Jul 2026.
 
   - title: Achievements
     layout: list
