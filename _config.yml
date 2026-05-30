@@ -40,22 +40,37 @@ content:
     content:
       - layout: left
         title: Korea University
-        sub_title: Integrated B.S./M.S./Ph.D. in Industrial & Management Engineering
-        caption: Mar. 2023 - Present
+        sub_title: Integrated M.S./Ph.D. in Industrial & Management Engineering
+        caption: Mar. 2027 - 
         description: |
-          B.S. in Industrial & Management Engineering (2023 - 2026)
-
-          - Completed all credit requirements for graduation in Feb 2026.
-          
-          Integrated M.S./Ph.D. in Industrial & Management Engineering (2027 - )
-
-          - Expected to enter the Integrated B.S./M.S./Ph.D. Program in Sep 2026.
+          Advisor: Prof. Seokhyun Chung
+          Entered the graduate track through the Integrated B.S./M.S./Ph.D. Program in Jul 2026.
+      - layout: left
+        title: Korea University
+        sub_title: B.S. in Industrial & Management Engineering
+        caption: Mar. 2023 - Feb. 2027
+        description: |
+          Completed all credit requirements for graduation in Feb 2026.
+          Expected to enter the Integrated B.S./M.S./Ph.D. Program in Jul 2026.
         
 
 
   - title: Career
     layout: list
     content:
+      - layout: left
+        title: SIA Lab
+        sub_title: Research & Project Associate
+        link: https://sia.korea.ac.kr/
+        caption: Apr. 2026 - Present
+        description: |
+          
+          **Research Area**
+          - Industrial AI & PHM, Data-centric Methods for Real-world AI, Robust Predictive Modeling
+
+          **Research Projects**
+          - Explored foundation model-based and meta-learning-based approaches for RUL prediction across heterogeneous equipment domains
+
       - layout: left
         title: SKIML Lab
         sub_title: Research Intern
@@ -74,7 +89,7 @@ content:
         title: SAVANNA Lab
         sub_title: Research Intern
         link: http://savanna.korea.ac.kr/
-        caption: Sep. 2024 - Jun. 2025
+        caption: Sep. 2024 - Aug. 2025
         description: |
           
           **Research Area**
