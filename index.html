@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SeonHo Yoo | Industrial AI Researcher</title>
+<meta name="description" content="SeonHo Yoo — Industrial AI researcher at Korea University working on reliable machine learning, anomaly detection, and optimization-informed AI for real-world industrial systems." />
+<link rel="canonical" href="https://seonhoyoo.github.io/" />
+<link rel="icon" href="images/favicon.ico" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="SeonHo Yoo" />
+<meta property="og:title" content="SeonHo Yoo | Industrial AI Researcher" />
+<meta property="og:description" content="Industrial AI researcher at Korea University — reliable ML, anomaly detection, and optimization-aware learning for real-world systems." />
+<meta property="og:url" content="https://seonhoyoo.github.io/" />
+<meta property="og:image" content="https://seonhoyoo.github.io/images/profile_hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="SeonHo Yoo | Industrial AI Researcher" />
+<meta name="twitter:description" content="Industrial AI researcher at Korea University." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<!-- Set theme before paint to avoid flash -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      var theme = saved || (prefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
+  })();
+</script>
+
+<style>
+/* ============================== Theme tokens ============================== */
+:root {
+  --bg: #f6f7fb;
+  --bg-alt: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f0f3f9;
+  --text: #1a2233;
+  --text-soft: #515c70;
+  --text-muted: #8b94a6;
+  --border: #e5e9f0;
+  --border-strong: #d4dae5;
+  --accent: #305f93;
+  --accent-strong: #21456c;
+  --accent-2: #4a90c2;
+  --accent-soft: rgba(48, 95, 147, 0.10);
+  --accent-softer: rgba(48, 95, 147, 0.055);
+  --shadow-sm: 0 1px 2px rgba(20, 33, 61, 0.05), 0 2px 8px rgba(20, 33, 61, 0.04);
+  --shadow-md: 0 6px 22px rgba(20, 33, 61, 0.08), 0 2px 6px rgba(20, 33, 61, 0.05);
+  --shadow-lg: 0 18px 48px rgba(20, 33, 61, 0.14);
+  --ring: rgba(48, 95, 147, 0.35);
+  --nav-bg: rgba(246, 247, 251, 0.78);
+  --hero-glow-1: rgba(74, 144, 194, 0.18);
+  --hero-glow-2: rgba(48, 95, 147, 0.12);
+}
+[data-theme="dark"] {
+  --bg: #0f1726;
+  --bg-alt: #0c1320;
+  --surface: #18223a;
+  --surface-2: #1e2a45;
+  --text: #e9eef7;
+  --text-soft: #aeb9cc;
+  --text-muted: #7c889e;
+  --border: #273350;
+  --border-strong: #34436a;
+  --accent: #7fb0e6;
+  --accent-strong: #a7cbf3;
+  --accent-2: #9cc2ee;
+  --accent-soft: rgba(127, 176, 230, 0.14);
+  --accent-softer: rgba(127, 176, 230, 0.08);
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 26px rgba(0, 0, 0, 0.38);
+  --shadow-lg: 0 22px 54px rgba(0, 0, 0, 0.5);
+  --ring: rgba(127, 176, 230, 0.45);
+  --nav-bg: rgba(15, 23, 38, 0.72);
+  --hero-glow-1: rgba(127, 176, 230, 0.16);
+  --hero-glow-2: rgba(48, 95, 147, 0.18);
+}
+
+/* ============================== Base ============================== */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background-color .4s ease, color .4s ease;
+  overflow-x: hidden;
+}
+h1, h2, h3, h4 { font-family: "Fraunces", Georgia, serif; font-weight: 600; line-height: 1.15; color: var(--text); }
+a { color: var(--accent); text-decoration: none; transition: color .2s ease; }
+a:hover { color: var(--accent-strong); }
+img { max-width: 100%; display: block; }
+::selection { background: var(--accent-soft); }
+
+.wrap { width: min(1080px, 92vw); margin-inline: auto; }
+.section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
+.section--alt { background: var(--bg-alt); border-block: 1px solid var(--border); }
+
+/* ============================== Kicker + section heads ============================== */
+.kicker {
+  display: inline-flex; align-items: center; gap: .55rem;
+  font-family: "Inter", sans-serif; font-weight: 600;
+  font-size: .76rem; letter-spacing: .16em; text-transform: uppercase;
+  color: var(--accent);
+}
+.kicker::before { content: ""; width: 26px; height: 2px; background: var(--accent); border-radius: 2px; opacity: .7; }
+.section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: .6rem 0 0; letter-spacing: -0.01em; }
+.section-head { margin-bottom: 2.6rem; max-width: 640px; }
+.section-head p { color: var(--text-soft); margin: .9rem 0 0; font-size: 1.02rem; }
+
+/* ============================== Navbar ============================== */
+.navbar {
+  position: fixed; inset: 0 0 auto 0; z-index: 100;
+  background: var(--nav-bg);
+  backdrop-filter: saturate(160%) blur(14px);
+  -webkit-backdrop-filter: saturate(160%) blur(14px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s ease, background-color .3s ease, box-shadow .3s ease;
+}
+.navbar.scrolled { border-bottom-color: var(--border); box-shadow: var(--shadow-sm); }
+.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 66px; }
+.brand { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.18rem; color: var(--text); letter-spacing: -0.01em; }
+.brand span { color: var(--accent); }
+.nav-links { display: flex; align-items: center; gap: 1.6rem; list-style: none; margin: 0; padding: 0; }
+.nav-links a {
+  font-size: .92rem; font-weight: 500; color: var(--text-soft); position: relative; padding: .2rem 0;
+}
+.nav-links a::after {
+  content: ""; position: absolute; left: 0; bottom: -3px; height: 2px; width: 0; background: var(--accent);
+  border-radius: 2px; transition: width .25s ease;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+.nav-links a.active::after, .nav-links a:hover::after { width: 100%; }
+.nav-actions { display: flex; align-items: center; gap: .5rem; }
+
+.icon-btn {
+  display: inline-grid; place-items: center; width: 40px; height: 40px;
+  border: 1px solid var(--border); border-radius: 11px; background: var(--surface);
+  color: var(--text-soft); cursor: pointer; transition: all .2s ease;
+}
+.icon-btn:hover { color: var(--accent); border-color: var(--border-strong); transform: translateY(-1px); }
+.icon-btn svg { width: 18px; height: 18px; }
+.theme-toggle .moon { display: none; }
+[data-theme="dark"] .theme-toggle .sun { display: none; }
+[data-theme="dark"] .theme-toggle .moon { display: block; }
+
+.hamburger { display: none; }
+
+/* ============================== Hero ============================== */
+.hero { position: relative; padding-top: 8.5rem; padding-bottom: 4.5rem; overflow: hidden; }
+.hero::before, .hero::after {
+  content: ""; position: absolute; border-radius: 50%; filter: blur(70px); z-index: 0; pointer-events: none;
+}
+.hero::before { width: 460px; height: 460px; background: var(--hero-glow-1); top: -120px; right: -80px; }
+.hero::after { width: 380px; height: 380px; background: var(--hero-glow-2); bottom: -160px; left: -120px; }
+.hero-grid {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: 1.25fr .95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: center;
+}
+.hero-text .kicker { margin-bottom: 1.1rem; }
+.hero-name { font-size: clamp(2.6rem, 6.5vw, 4.4rem); margin: 0; letter-spacing: -0.02em; font-weight: 600; }
+.hero-role { font-size: clamp(1.1rem, 2.4vw, 1.45rem); color: var(--accent); font-weight: 600; margin: .5rem 0 0; font-family: "Inter", sans-serif; letter-spacing: -0.01em; }
+.hero-affil { color: var(--text-muted); font-weight: 500; }
+.hero-lead { color: var(--text-soft); font-size: 1.06rem; margin: 1.4rem 0 0; max-width: 33em; }
+.hero-cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+
+.btn {
+  display: inline-flex; align-items: center; gap: .55rem;
+  font-weight: 600; font-size: .95rem; padding: .72rem 1.3rem; border-radius: 12px;
+  cursor: pointer; transition: all .22s ease; border: 1px solid transparent; white-space: nowrap;
+}
+.btn svg { width: 17px; height: 17px; }
+.btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow-sm); }
+[data-theme="dark"] .btn-primary { color: #0c1320; }
+.btn-primary:hover { background: var(--accent-strong); color: #fff; transform: translateY(-2px); box-shadow: var(--shadow-md); }
+[data-theme="dark"] .btn-primary:hover { color: #0c1320; }
+.btn-ghost { background: var(--surface); color: var(--text); border-color: var(--border-strong); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
+
+.hero-social { display: flex; gap: .65rem; margin-top: 1.7rem; }
+.hero-social a {
+  display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 11px;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text-soft); transition: all .2s ease;
+}
+.hero-social a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.hero-social svg { width: 19px; height: 19px; }
+
+/* Hero photo */
+.hero-photo { position: relative; justify-self: center; width: 100%; max-width: 330px; }
+.hero-photo .frame {
+  position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 9 / 10;
+  box-shadow: var(--shadow-lg); border: 1px solid var(--border);
+}
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.hero-photo .ring {
+  position: absolute; inset: auto -16px -16px auto; width: 120px; height: 120px;
+  border: 2px solid var(--accent); border-radius: 20px; z-index: -1; opacity: .5;
+}
+.hero-photo .badge {
+  position: absolute; left: -14px; bottom: 22px; background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: 13px; padding: .55rem .85rem; box-shadow: var(--shadow-md);
+  display: flex; align-items: center; gap: .55rem; font-size: .82rem; font-weight: 600;
+}
+.badge .dot { width: 9px; height: 9px; border-radius: 50%; background: #2bb673; box-shadow: 0 0 0 4px rgba(43,182,115,.18); }
+
+/* ============================== About / interests ============================== */
+.about-grid { display: grid; grid-template-columns: 1fr; gap: 2.4rem; }
+.about-lead p { font-size: 1.08rem; color: var(--text-soft); margin: 0 0 1rem; }
+.about-lead strong { color: var(--text); font-weight: 600; }
+.interests { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: .4rem; }
+.interest {
+  display: flex; gap: .9rem; align-items: flex-start; padding: 1.15rem 1.25rem;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 15px; transition: all .25s ease;
+}
+.interest:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.interest .ic {
+  flex: none; width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
+  background: var(--accent-soft); color: var(--accent);
+}
+.interest .ic svg { width: 20px; height: 20px; }
+.interest p { margin: 0; font-weight: 600; font-size: .96rem; line-height: 1.45; padding-top: .35rem; }
+
+/* ============================== Timeline ============================== */
+.timeline { position: relative; display: grid; gap: 1.3rem; }
+.t-item {
+  position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 18px;
+  padding: 1.5rem 1.7rem; box-shadow: var(--shadow-sm); transition: all .28s ease; overflow: hidden;
+}
+.t-item::before {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
+  background: linear-gradient(var(--accent), var(--accent-2)); opacity: 0; transition: opacity .28s ease;
+}
+.t-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.t-item:hover::before { opacity: 1; }
+.t-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
+.t-title { font-size: 1.28rem; margin: 0; }
+.t-title a { color: var(--text); }
+.t-title a:hover { color: var(--accent); }
+.t-date {
+  font-size: .8rem; font-weight: 600; color: var(--accent); background: var(--accent-soft);
+  padding: .3rem .7rem; border-radius: 999px; white-space: nowrap; letter-spacing: .01em;
+}
+.t-sub { color: var(--text-soft); font-weight: 600; margin: .25rem 0 0; font-size: .98rem; }
+.t-label { font-size: .72rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--text-muted); margin: 1.1rem 0 .55rem; }
+.tags { display: flex; flex-wrap: wrap; gap: .45rem; }
+.tag {
+  font-size: .8rem; font-weight: 500; color: var(--text-soft); background: var(--surface-2);
+  border: 1px solid var(--border); padding: .28rem .7rem; border-radius: 8px;
+}
+.bullets { margin: .35rem 0 0; padding: 0; list-style: none; }
+.bullets li { position: relative; padding-left: 1.35rem; color: var(--text-soft); margin: .5rem 0; font-size: .96rem; }
+.bullets li::before {
+  content: ""; position: absolute; left: .1rem; top: .62rem; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent); opacity: .65;
+}
+.bullets a { font-weight: 600; }
+
+/* ============================== Achievements ============================== */
+.ach-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.3rem; }
+.card {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 1.6rem 1.7rem;
+  box-shadow: var(--shadow-sm); transition: all .28s ease;
+}
+.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
+.card-head { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.1rem; }
+.card-head .ic { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); flex: none; }
+.card-head .ic svg { width: 19px; height: 19px; }
+.card-head h3 { font-size: 1.2rem; margin: 0; }
+.card-head .count { margin-left: auto; font-size: .78rem; font-weight: 700; color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); padding: .15rem .6rem; border-radius: 999px; }
+.pub-group + .pub-group { margin-top: 1.1rem; }
+.pub-region { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--text-muted); margin: 0 0 .5rem; }
+.pub-list { margin: 0; padding: 0; list-style: none; counter-reset: pub; }
+.pub-list li {
+  position: relative; padding-left: 1.7rem; margin: .7rem 0; color: var(--text-soft); font-size: .93rem; line-height: 1.62;
+}
+.pub-list li::before {
+  counter-increment: pub; content: counter(pub); position: absolute; left: 0; top: .15rem;
+  width: 1.2rem; height: 1.2rem; font-size: .68rem; font-weight: 700; font-family: "Inter", sans-serif;
+  display: grid; place-items: center; color: var(--accent); background: var(--accent-soft); border-radius: 6px;
+}
+.pub-list.dash { counter-reset: none; }
+.pub-list.dash li::before { counter-increment: none; content: ""; width: 6px; height: 6px; top: .6rem; left: .35rem; border-radius: 50%; background: var(--accent); opacity: .6; }
+.me { color: var(--accent); font-weight: 700; }
+.honor-list li { font-size: .96rem; }
+
+/* ============================== Contact ============================== */
+.contact { text-align: center; }
+.contact .section-title { margin-bottom: .8rem; }
+.contact p { color: var(--text-soft); max-width: 38em; margin: 0 auto 2rem; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; }
+.references { margin-top: 2.2rem; color: var(--text-muted); font-size: .9rem; }
+
+/* ============================== Footer ============================== */
+.footer { border-top: 1px solid var(--border); padding: 2.2rem 0; }
+.footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
+.footer .brand { font-size: 1rem; }
+.footer-meta { color: var(--text-muted); font-size: .86rem; }
+.footer-social { display: flex; gap: .5rem; }
+.footer-social a { color: var(--text-muted); display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; transition: all .2s ease; }
+.footer-social a:hover { color: var(--accent); background: var(--accent-soft); }
+.footer-social svg { width: 17px; height: 17px; }
+
+/* ============================== Reveal animation ============================== */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .7s cubic-bezier(.22,.7,.25,1), transform .7s cubic-bezier(.22,.7,.25,1); }
+.reveal.in { opacity: 1; transform: none; }
+
+/* ============================== Mobile menu / responsive ============================== */
+@media (max-width: 860px) {
+  .hero-grid { grid-template-columns: 1fr; gap: 2.6rem; }
+  .hero-photo { order: -1; max-width: 260px; }
+  .hero-text { text-align: left; }
+  .interests, .ach-grid { grid-template-columns: 1fr; }
+  .nav-links {
+    position: fixed; inset: 66px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0;
+    background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: .5rem 0;
+    transform: translateY(-130%); transition: transform .32s cubic-bezier(.4,0,.2,1); box-shadow: var(--shadow-md);
+  }
+  .nav-links.open { transform: translateY(0); }
+  .nav-links li { width: 100%; }
+  .nav-links a { display: block; padding: .85rem 7vw; font-size: 1rem; }
+  .nav-links a::after { display: none; }
+  .nav-links a.active { color: var(--accent); background: var(--accent-soft); }
+  .hamburger { display: inline-grid; }
+}
+@media (max-width: 560px) {
+  .t-item, .card { padding: 1.3rem 1.25rem; }
+  .hero-cta .btn { flex: 1 1 auto; justify-content: center; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { scroll-behavior: auto !important; }
+  .reveal { transition: none; opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================== Navbar ============================== -->
+<nav class="navbar" id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#hero" class="brand">SeonHo <span>Yoo</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#career">Career</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================== Hero ============================== -->
+<header class="hero" id="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <span class="kicker">Industrial AI Researcher</span>
+      <h1 class="hero-name">SeonHo Yoo</h1>
+      <p class="hero-role">Reliable Machine Learning &amp; Optimization-aware AI<br><span class="hero-affil">Korea University · Industrial &amp; Management Engineering</span></p>
+      <p class="hero-lead">I build trustworthy and efficient AI methods for structured data and operational decision-making — spanning anomaly detection, robust predictive modeling, and optimization-informed learning for real-world industrial systems.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary" href="assets/SeonHoYoo_CV.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
+          View CV
+        </a>
+        <a class="btn btn-ghost" href="#contact">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          Get in touch
+        </a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com/SeonHoYoo" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.6-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/seonhoyoo" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/db_prefer" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="mailto:leoyoo2004@korea.ac.kr" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="frame"><img src="images/profile_hero.jpg" alt="Portrait of SeonHo Yoo" /></div>
+      <span class="ring"></span>
+      <span class="badge"><span class="dot"></span> Open to research collaboration</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============================== About ============================== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">About</span>
+      <h2 class="section-title">Research that earns trust</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-lead reveal">
+        <p>I am <strong>SeonHo Yoo</strong>, an industrial AI researcher at Korea University focusing on reliable machine learning, anomaly detection, and optimization-informed multi-agent AI for real-world industrial systems.</p>
+        <p>My research aims to develop <strong>trustworthy and efficient AI methods</strong> for structured data and operational decision-making problems.</p>
+      </div>
+      <div class="interests" data-stagger>
+        <div class="interest reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l5-5 4 4 8-8"/><path d="M21 8V3h-5"/></svg></span>
+          <p>Anomaly Detection &amp; Robust Predictive Modeling</p>
+        </div>
+        <div class="interest reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
+          <p>Optimization-aware Learning &amp; Decision-making</p>
+        </div>
+        <div class="interest reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+          <p>AI for Operations &amp; Industrial Systems</p>
+        </div>
+        <div class="interest reveal">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
+          <p>Data-centric Methods for Real-world Applications</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== Career ============================== -->
+<section class="section section--alt" id="career">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Experience</span>
+      <h2 class="section-title">Career</h2>
+      <p>Research positions across industrial AI, graph-based reasoning, and optimization.</p>
+    </div>
+    <div class="timeline" data-stagger>
+
+      <article class="t-item reveal">
+        <div class="t-top">
+          <h3 class="t-title"><a href="https://sia.korea.ac.kr/" target="_blank" rel="noopener">SIA Lab</a></h3>
+          <span class="t-date">Apr. 2026 – Present</span>
+        </div>
+        <p class="t-sub">Research &amp; Project Associate · Korea University</p>
+        <p class="t-label">Research Area</p>
+        <div class="tags">
+          <span class="tag">Industrial AI &amp; PHM</span>
+          <span class="tag">Data-centric AI</span>
+          <span class="tag">Robust Predictive Modeling</span>
+        </div>
+        <p class="t-label">Research Projects</p>
+        <ul class="bullets">
+          <li>Explored foundation model-based and meta-learning-based approaches for RUL prediction across heterogeneous equipment domains.</li>
+        </ul>
+      </article>
+
+      <article class="t-item reveal">
+        <div class="t-top">
+          <h3 class="t-title"><a href="https://www.skiml.snu.ac.kr/" target="_blank" rel="noopener">SKIML Lab</a></h3>
+          <span class="t-date">Jul. 2025 – Jun. 2026</span>
+        </div>
+        <p class="t-sub">Research Intern · Seoul National University</p>
+        <p class="t-label">Research Area</p>
+        <div class="tags">
+          <span class="tag">Graph-based Reasoning</span>
+          <span class="tag">Multi-hop QA</span>
+          <span class="tag">Protein Structure Prediction</span>
+        </div>
+        <p class="t-label">Research Projects</p>
+        <ul class="bullets">
+          <li>Designed a robust modeling framework for multi-hop QA by leveraging graph structures in the verification process.</li>
+          <li>Developed an energy-based model for evaluating protein decoys, enabling quantitative assessment of structural plausibility.</li>
+        </ul>
+      </article>
+
+      <article class="t-item reveal">
+        <div class="t-top">
+          <h3 class="t-title"><a href="http://savanna.korea.ac.kr/" target="_blank" rel="noopener">SAVANNA Lab</a></h3>
+          <span class="t-date">Sep. 2024 – Aug. 2025</span>
+        </div>
+        <p class="t-sub">Research Intern · Korea University</p>
+        <p class="t-label">Research Area</p>
+        <div class="tags">
+          <span class="tag">Semi-supervised Learning</span>
+          <span class="tag">Data Augmentation</span>
+          <span class="tag">Demand Forecasting</span>
+          <span class="tag">Optimization</span>
+        </div>
+        <p class="t-label">Research Projects</p>
+        <ul class="bullets">
+          <li>Integrated optimization of future logistics and freight brokerage in multi-supply chain systems: intelligent last-mile and middle-mile algorithms based on 5PL platforms.</li>
+          <li>Location optimization of battery swapping stations for electric two-wheelers in sustainable urban delivery (Industry–Academia Joint Technology Development, LINC 3.0).</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== Education ============================== -->
+<section class="section" id="education">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Academic Background</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <div class="timeline" data-stagger>
+
+      <article class="t-item reveal">
+        <div class="t-top">
+          <h3 class="t-title">Korea University</h3>
+          <span class="t-date">Mar. 2027 –</span>
+        </div>
+        <p class="t-sub">Integrated M.S./Ph.D. in Industrial &amp; Management Engineering</p>
+        <ul class="bullets">
+          <li>Advisor: Prof. Seokhyun Chung.</li>
+          <li>Entered the graduate track through the Integrated B.S./M.S./Ph.D. Program in Jul. 2026.</li>
+        </ul>
+      </article>
+
+      <article class="t-item reveal">
+        <div class="t-top">
+          <h3 class="t-title">Korea University</h3>
+          <span class="t-date">Mar. 2023 – Feb. 2027</span>
+        </div>
+        <p class="t-sub">B.S. in Industrial &amp; Management Engineering</p>
+        <ul class="bullets">
+          <li>Completed all credit requirements for graduation in Feb. 2026.</li>
+          <li>Expected to enter the Integrated B.S./M.S./Ph.D. Program in Jul. 2026.</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== Achievements ============================== -->
+<section class="section section--alt" id="achievements">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Selected Work</span>
+      <h2 class="section-title">Achievements</h2>
+      <p>Publications, presentations, competitions, and honors.</p>
+    </div>
+    <div class="ach-grid">
+
+      <article class="card reveal">
+        <div class="card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4h0v13"/></svg></span>
+          <h3>Journal Publications</h3>
+          <span class="count">1</span>
+        </div>
+        <div class="pub-group">
+          <p class="pub-region">Domestic</p>
+          <ul class="pub-list">
+            <li><span class="me">Yoo, S.</span>, Joo, S., Ko, K.*, Jeong, T.* (2026). <em>TriMa: Tri-strategy Margin-filtered Pseudo-labeling for Battery Swapping Demand Forecasting.</em> Journal of the Korean Institute of Industrial Engineers (KIIE).</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v12H3z"/><path d="M8 20h8M12 16v4"/></svg></span>
+          <h3>Presentations</h3>
+          <span class="count">4</span>
+        </div>
+        <div class="pub-group">
+          <p class="pub-region">Domestic</p>
+          <ul class="pub-list">
+            <li>Ko, K., Cha, H., Kim, T., <span class="me">Yoo, S.</span>, Jeong, T.* (2025). A Study on Multilateral Transportation Matching and Equilibrium Price Determination in a 5PL Logistics Platform Environment. Fall Conference, KIIE, Daejeon, Korea.</li>
+            <li><span class="me">Yoo, S.</span>, Ko, K., Kim, T., Jeong, T.* (2025). Improving Electric Two-Wheeler Battery Swap Demand Forecasting via Clustering and Data Augmentation. Spring Conference, Korean Society of SCM, Seoul, Korea.</li>
+            <li>Choi, M., Ko, K., Kim, T., <span class="me">Yoo, S.</span>, Joo, S., Jeong, T.* (2024). Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Sustainable Urban Delivery Services. Fall Conference, Korean Society of SCM, Seoul, Korea.</li>
+            <li>Kim, T., Ko, K., Choi, M., <span class="me">Yoo, S.</span>, Joo, S., Jeong, T.* (2024). Data-Driven Location Optimization of Battery Swapping Stations for Electric Two-Wheelers in Urban Delivery Services. Fall Conference, KIIE, Seoul, Korea.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M17 4h3v2a3 3 0 0 1-3 3M7 4H4v2a3 3 0 0 0 3 3"/></svg></span>
+          <h3>Competitions</h3>
+          <span class="count">4</span>
+        </div>
+        <div class="pub-group">
+          <p class="pub-region">Domestic</p>
+          <ul class="pub-list">
+            <li><span class="me">Yoo, S.</span>, Kim, T. (2025). A Study on Multilateral Transportation Matching in a 5PL Logistics Platform Considering Robust Equilibrium Price Determination. Fall Conference, Korean Society of Logistics (KSCL), Seoul, Korea.</li>
+            <li><strong>Finalist</strong>, Edge AI Developer Hackathon: Innovating On-Device Intelligence, Qualcomm, Korea, 2025 — project &ldquo;Paperclip: A Tone-Sensitive Writing Assistant for Clear and Culturally Appropriate Messaging.&rdquo; <a href="https://github.com/yeonhj0507/Paperclip" target="_blank" rel="noopener">View repository &rarr;</a></li>
+            <li><span class="me">Yoo, S.</span>, Kim, W., Won, J. (2024). Volume Utilization Analysis of a Reinforcement Learning-Based Three-Dimensional Packing Problem According to Stack and Conveyor Variables. Fall Conference, KIIE, Seoul, Korea.</li>
+            <li><strong>Outstanding Award</strong>, Field Camp Competition, KIIE, 2023 — project &ldquo;Optimal Location of Public Educational Facilities through Analysis of the School-Age Population.&rdquo;</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-head">
+          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg></span>
+          <h3>Honors</h3>
+          <span class="count">3</span>
+        </div>
+        <ul class="pub-list dash honor-list">
+          <li><strong>Presidential Science Scholarship</strong> — Ministry of Science and ICT, Korea (2025).</li>
+          <li><strong>Sang-Ah Scholarship Foundation</strong> — Scholarship Recipient (2024).</li>
+          <li><strong>Academic Excellence Award</strong> — Korea University (2023–2025).</li>
+        </ul>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== Contact ============================== -->
+<section class="section" id="contact">
+  <div class="wrap contact">
+    <div class="reveal">
+      <span class="kicker" style="justify-content:center">Contact</span>
+      <h2 class="section-title">Let&rsquo;s get in touch</h2>
+      <p>Open to research collaborations, discussions on industrial AI, and graduate-level opportunities. The fastest way to reach me is by email.</p>
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:leoyoo2004@korea.ac.kr">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          leoyoo2004@korea.ac.kr
+        </a>
+        <a class="btn btn-ghost" href="assets/SeonHoYoo_CV.pdf" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>
+          Download CV
+        </a>
+      </div>
+      <p class="references">References available on request.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============================== Footer ============================== -->
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a href="#hero" class="brand">SeonHo <span>Yoo</span></a>
+    <span class="footer-meta">© <span id="year"></span> SeonHo Yoo · Industrial AI Researcher, Korea University</span>
+    <div class="footer-social">
+      <a href="https://github.com/SeonHoYoo" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.6-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg></a>
+      <a href="https://www.linkedin.com/in/seonhoyoo" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+      <a href="https://www.instagram.com/db_prefer" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg></a>
+      <a href="mailto:leoyoo2004@korea.ac.kr" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+
+  /* ---- Theme toggle ---- */
+  var toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', function () {
+    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (e) {}
+  });
+
+  /* ---- Mobile menu ---- */
+  var burger = document.getElementById('hamburger');
+  var links = document.getElementById('navLinks');
+  burger.addEventListener('click', function () {
+    var open = links.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  links.addEventListener('click', function (e) {
+    if (e.target.tagName === 'A') {
+      links.classList.remove('open');
+      burger.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  /* ---- Navbar shadow on scroll ---- */
+  var navbar = document.getElementById('navbar');
+  function onScroll() { navbar.classList.toggle('scrolled', window.scrollY > 12); }
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  /* ---- Stagger delays ---- */
+  document.querySelectorAll('[data-stagger]').forEach(function (group) {
+    Array.prototype.forEach.call(group.children, function (child, i) {
+      child.style.transitionDelay = (i * 75) + 'ms';
+    });
+  });
+
+  /* ---- Reveal on scroll ---- */
+  var reveals = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add('in'); });
+  }
+
+  /* ---- Scrollspy ---- */
+  var navAnchors = Array.prototype.slice.call(document.querySelectorAll('.nav-links a'));
+  var sections = navAnchors
+    .map(function (a) { return document.querySelector(a.getAttribute('href')); })
+    .filter(Boolean);
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) {
+          var id = en.target.id;
+          navAnchors.forEach(function (a) {
+            a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---- Year ---- */
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
