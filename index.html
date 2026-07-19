@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>SeonHo Yoo | Industrial AI Researcher</title>
-<meta name="description" content="SeonHo Yoo — Industrial AI researcher at Korea University working on reliable machine learning, anomaly detection, and optimization-informed AI for real-world industrial systems." />
+<meta name="description" content="SeonHo Yoo, an Industrial AI researcher at Korea University working on reliable machine learning, anomaly detection, and optimization-informed AI for real-world industrial systems." />
 <link rel="canonical" href="https://seonhoyoo.github.io/" />
 <link rel="icon" href="images/favicon.ico" />
 
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="SeonHo Yoo" />
 <meta property="og:title" content="SeonHo Yoo | Industrial AI Researcher" />
-<meta property="og:description" content="Industrial AI researcher at Korea University — reliable ML, anomaly detection, and optimization-aware learning for real-world systems." />
+<meta property="og:description" content="Industrial AI researcher at Korea University, working on reliable ML, anomaly detection, and optimization-aware learning for real-world systems." />
 <meta property="og:url" content="https://seonhoyoo.github.io/" />
 <meta property="og:image" content="https://seonhoyoo.github.io/images/profile_hero.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -21,19 +21,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-<!-- Set theme before paint to avoid flash -->
-<script>
-  (function () {
-    try {
-      var saved = localStorage.getItem('theme');
-      var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-      var theme = saved || (prefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', theme);
-    } catch (e) {}
-  })();
-</script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 
 <style>
 /* ============================== Theme tokens ============================== */
@@ -345,6 +333,7 @@ img { max-width: 100%; display: block; }
   .reveal { transition: none; opacity: 1; transform: none; }
 }
 </style>
+<link rel="stylesheet" href="site.css" />
 </head>
 <body>
 
@@ -354,16 +343,13 @@ img { max-width: 100%; display: block; }
     <a href="#hero" class="brand">SeonHo <span>Yoo</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
+      <li><a href="#current-work">Current Work</a></li>
       <li><a href="#career">Career</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
-        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
-        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8z"/></svg>
-      </button>
       <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
@@ -378,7 +364,7 @@ img { max-width: 100%; display: block; }
       <span class="kicker">Industrial AI Researcher</span>
       <h1 class="hero-name">SeonHo Yoo</h1>
       <p class="hero-role">Reliable Machine Learning &amp; Optimization-aware AI<br><span class="hero-affil">Korea University · Industrial &amp; Management Engineering</span></p>
-      <p class="hero-lead">I build trustworthy and efficient AI methods for structured data and operational decision-making — spanning anomaly detection, robust predictive modeling, and optimization-informed learning for real-world industrial systems.</p>
+      <p class="hero-lead">I build trustworthy and efficient AI methods for structured data and operational decision-making, spanning anomaly detection, robust predictive modeling, and optimization-informed learning for real-world industrial systems.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="0601cv.pdf" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0 4-4m-4 4-4-4M5 21h14"/></svg>
@@ -406,6 +392,7 @@ img { max-width: 100%; display: block; }
     </div>
     <div class="hero-photo">
       <div class="frame"><img src="images/profile_hero.jpg" alt="Portrait of SeonHo Yoo" /></div>
+      <p class="photo-caption">Research &amp; Project Associate · SIA Lab</p>
       <span class="ring"></span>
       <span class="badge"><span class="dot"></span> Open to research collaboration</span>
     </div>
@@ -418,7 +405,7 @@ img { max-width: 100%; display: block; }
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">About</span>
-      <h2 class="section-title">Research that earns trust</h2>
+      <h2 class="section-title">About</h2>
     </div>
     <div class="about-grid">
       <div class="about-lead reveal">
@@ -447,13 +434,55 @@ img { max-width: 100%; display: block; }
   </div>
 </section>
 
+<!-- ============================== Current Work ============================== -->
+<section class="section" id="current-work">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">In Progress</span>
+      <h2 class="section-title">Current Work</h2>
+    </div>
+
+    <div class="current-work-groups">
+        <div class="current-list">
+          <article class="current-item">
+            <p class="current-status">Ongoing Research</p>
+            <div>
+              <h4>Reliable Reasoning Models</h4>
+              <p>Developing and evaluating reasoning models for reliable multi-step inference, structured verification, and robust decision-making in complex tasks.</p>
+            </div>
+          </article>
+          <article class="current-item">
+            <p class="current-status">Ongoing Research</p>
+            <div>
+              <h4>Remaining Useful Life Prediction</h4>
+              <p>Studying robust RUL prediction methods that generalize across heterogeneous equipment domains, operating conditions, and limited-data environments.</p>
+            </div>
+          </article>
+          <article class="current-item">
+            <p class="current-status">Competition</p>
+            <div>
+              <h4>Optimization Grand Challenge 2026</h4>
+              <p>Developing and validating a competition solution through iterative modeling, performance analysis, and systematic experimentation.</p>
+            </div>
+          </article>
+          <article class="current-item">
+            <p class="current-status">Competition</p>
+            <div>
+              <h4>The 4th Artificial Intelligence Drug Discovery Competition</h4>
+              <p>Developing a predictive modeling pipeline for data-driven drug discovery and evaluating its performance throughout the competition.</p>
+            </div>
+          </article>
+        </div>
+    </div>
+  </div>
+</section>
+
 <!-- ============================== Career ============================== -->
 <section class="section section--alt" id="career">
   <div class="wrap">
     <div class="section-head reveal">
       <span class="kicker">Experience</span>
       <h2 class="section-title">Career</h2>
-      <p>Research positions across industrial AI, graph-based reasoning, and optimization.</p>
     </div>
     <div class="timeline" data-stagger>
 
@@ -561,7 +590,6 @@ img { max-width: 100%; display: block; }
     <div class="section-head reveal">
       <span class="kicker">Selected Work</span>
       <h2 class="section-title">Achievements</h2>
-      <p>Publications, presentations, competitions, and honors.</p>
     </div>
     <div class="ach-grid">
 
@@ -569,7 +597,6 @@ img { max-width: 100%; display: block; }
         <div class="card-head">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4h0v13"/></svg></span>
           <h3>Journal Publications</h3>
-          <span class="count">1</span>
         </div>
         <div class="pub-group">
           <p class="pub-region">Domestic</p>
@@ -583,7 +610,6 @@ img { max-width: 100%; display: block; }
         <div class="card-head">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 4h18v12H3z"/><path d="M8 20h8M12 16v4"/></svg></span>
           <h3>Presentations</h3>
-          <span class="count">4</span>
         </div>
         <div class="pub-group">
           <p class="pub-region">Domestic</p>
@@ -600,15 +626,14 @@ img { max-width: 100%; display: block; }
         <div class="card-head">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0z"/><path d="M17 4h3v2a3 3 0 0 1-3 3M7 4H4v2a3 3 0 0 0 3 3"/></svg></span>
           <h3>Competitions</h3>
-          <span class="count">4</span>
         </div>
         <div class="pub-group">
           <p class="pub-region">Domestic</p>
           <ul class="pub-list">
             <li><span class="me">Yoo, S.</span>, Kim, T. (2025). A Study on Multilateral Transportation Matching in a 5PL Logistics Platform Considering Robust Equilibrium Price Determination. Fall Conference, Korean Society of Logistics (KSCL), Seoul, Korea.</li>
-            <li><strong>Finalist</strong>, Edge AI Developer Hackathon: Innovating On-Device Intelligence, Qualcomm, Korea, 2025 — project &ldquo;Paperclip: A Tone-Sensitive Writing Assistant for Clear and Culturally Appropriate Messaging.&rdquo; <a href="https://github.com/yeonhj0507/Paperclip" target="_blank" rel="noopener">View repository &rarr;</a></li>
+            <li><strong>Finalist</strong>, Edge AI Developer Hackathon: Innovating On-Device Intelligence, Qualcomm, Korea, 2025. Project: &ldquo;Paperclip: A Tone-Sensitive Writing Assistant for Clear and Culturally Appropriate Messaging.&rdquo; <a href="https://github.com/yeonhj0507/Paperclip" target="_blank" rel="noopener">View repository &rarr;</a></li>
             <li><span class="me">Yoo, S.</span>, Kim, W., Won, J. (2024). Volume Utilization Analysis of a Reinforcement Learning-Based Three-Dimensional Packing Problem According to Stack and Conveyor Variables. Fall Conference, KIIE, Seoul, Korea.</li>
-            <li><strong>Outstanding Award</strong>, Field Camp Competition, KIIE, 2023 — project &ldquo;Optimal Location of Public Educational Facilities through Analysis of the School-Age Population.&rdquo;</li>
+            <li><strong>Outstanding Award</strong>, Field Camp Competition, KIIE, 2023. Project: &ldquo;Optimal Location of Public Educational Facilities through Analysis of the School-Age Population.&rdquo;</li>
           </ul>
         </div>
       </article>
@@ -617,12 +642,11 @@ img { max-width: 100%; display: block; }
         <div class="card-head">
           <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg></span>
           <h3>Honors</h3>
-          <span class="count">3</span>
         </div>
         <ul class="pub-list dash honor-list">
-          <li><strong>Presidential Science Scholarship</strong> — Ministry of Science and ICT, Korea (2025).</li>
-          <li><strong>Sang-Ah Scholarship Foundation</strong> — Scholarship Recipient (2024).</li>
-          <li><strong>Academic Excellence Award</strong> — Korea University (2023–2025).</li>
+          <li><strong>Presidential Science Scholarship</strong>, Ministry of Science and ICT, Korea (2025).</li>
+          <li><strong>Sang-Ah Scholarship Foundation</strong>, Scholarship Recipient (2024).</li>
+          <li><strong>Academic Excellence Award</strong>, Korea University (2023–2025).</li>
         </ul>
       </article>
 
@@ -669,16 +693,6 @@ img { max-width: 100%; display: block; }
 
 <script>
 (function () {
-  var root = document.documentElement;
-
-  /* ---- Theme toggle ---- */
-  var toggle = document.getElementById('themeToggle');
-  toggle.addEventListener('click', function () {
-    var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    root.setAttribute('data-theme', next);
-    try { localStorage.setItem('theme', next); } catch (e) {}
-  });
-
   /* ---- Mobile menu ---- */
   var burger = document.getElementById('hamburger');
   var links = document.getElementById('navLinks');
