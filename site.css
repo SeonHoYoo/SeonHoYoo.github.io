@@ -5,8 +5,8 @@
   --surface: transparent;
   --surface-2: #e7ecf2;
   --text: #101d33;
-  --text-soft: #3f4c60;
-  --text-muted: #657286;
+  --text-soft: #2b3a52;
+  --text-muted: #4d5a70;
   --border: #cbd4df;
   --border-strong: #96a4b7;
   --accent: #263d64;
@@ -19,26 +19,8 @@
   --shadow-lg: none;
 }
 
-body {
-  padding-bottom: 0;
-  font-family: "Noto Sans KR", "Noto Sans", Arial, sans-serif !important;
-}
-
-h1,
-h2,
-h3,
-h4,
-.brand,
-.hero-role {
-  font-family: "Noto Sans KR", "Noto Sans", Arial, sans-serif !important;
-}
-
-.hero::before,
-.hero::after,
 .section .kicker,
 .t-item::before,
-.hero-photo .badge,
-.hero-photo .ring,
 .interest .ic,
 .card-head .ic {
   display: none !important;
@@ -76,32 +58,17 @@ h4,
 
 .hero-name {
   color: var(--accent-strong) !important;
-  font-size: clamp(1.95rem, 3.7vw, 2.7rem) !important;
+  font-size: clamp(1.7rem, 3.1vw, 2.25rem) !important;
 }
 
 .hero-role {
   font-size: clamp(.95rem, 1.8vw, 1.15rem) !important;
 }
 
-.hero-text .kicker {
-  letter-spacing: .1em;
-}
-
 .hero-lead {
   margin-top: 1.05rem !important;
   max-width: none !important;
   font-size: 1rem !important;
-}
-
-.photo-caption {
-  margin: .65rem 0 0;
-  padding-top: .55rem;
-  border-top: 1px solid var(--border-strong);
-  color: var(--text-soft);
-  font-size: .7rem;
-  font-weight: 500;
-  letter-spacing: .02em;
-  text-align: left;
 }
 
 .navbar {
@@ -155,8 +122,6 @@ h4,
 .timeline { gap: 0 !important; }
 .t-title { font-size: 1.12rem !important; }
 .t-sub { font-size: .9rem !important; }
-.t-label,
-.pub-region { letter-spacing: .06em !important; }
 .ach-grid { gap: 1rem !important; }
 .card-head h3 { font-size: 1.05rem !important; }
 .pub-list li { font-size: .87rem !important; }
@@ -199,7 +164,6 @@ h4,
 #current-work { border-top: 1px solid var(--border); }
 
 .current-work-groups { display: grid; }
-.current-list { border-top: 1px solid var(--border-strong); }
 
 .current-item {
   display: grid;
@@ -219,13 +183,12 @@ h4,
 .current-status {
   margin: .18rem 0 0;
   color: var(--accent);
-  font-size: .68rem;
-  font-weight: 600;
-  letter-spacing: .04em;
-  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 700;
+  letter-spacing: .01em;
 }
 
-.current-item h4 {
+.current-item h3 {
   margin: 0;
   font-size: .98rem;
   font-weight: 600;
@@ -235,12 +198,6 @@ h4,
   margin: 0;
   color: var(--text-soft);
   font-size: .88rem;
-}
-
-.reveal {
-  opacity: 1 !important;
-  transform: none !important;
-  transition: none !important;
 }
 
 .footer { padding-bottom: 2.2rem !important; }
