@@ -6,7 +6,7 @@
 <title>Seon-Ho Yoo | Industrial AI Researcher</title>
 <meta name="description" content="Seon-Ho Yoo, an Industrial AI researcher at Korea University working on reliable machine learning, anomaly detection, and optimization-informed AI for real-world industrial systems." />
 <link rel="canonical" href="https://seonhoyoo.github.io/" />
-<meta name="theme-color" content="#172b4c" />
+<meta name="theme-color" content="#ffffff" />
 <link rel="icon" href="images/favicon.ico" />
 
 <!-- Open Graph / Twitter -->
@@ -20,268 +20,7 @@
 <meta name="twitter:title" content="Seon-Ho Yoo | Industrial AI Researcher" />
 <meta name="twitter:description" content="Industrial AI researcher at Korea University." />
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-<style>
-/* ============================== Theme tokens ============================== */
-:root {
-  --bg: #f6f7fb;
-  --bg-alt: #ffffff;
-  --surface: #ffffff;
-  --surface-2: #f0f3f9;
-  --text: #1a2233;
-  --text-soft: #515c70;
-  --text-muted: #8b94a6;
-  --border: #e5e9f0;
-  --border-strong: #d4dae5;
-  --accent: #305f93;
-  --accent-strong: #21456c;
-  --accent-2: #4a90c2;
-  --accent-soft: rgba(48, 95, 147, 0.10);
-  --accent-softer: rgba(48, 95, 147, 0.055);
-  --shadow-sm: 0 1px 2px rgba(20, 33, 61, 0.05), 0 2px 8px rgba(20, 33, 61, 0.04);
-  --shadow-md: 0 6px 22px rgba(20, 33, 61, 0.08), 0 2px 6px rgba(20, 33, 61, 0.05);
-  --shadow-lg: 0 18px 48px rgba(20, 33, 61, 0.14);
-  --ring: rgba(48, 95, 147, 0.35);
-  --nav-bg: rgba(246, 247, 251, 0.78);
-}
-
-/* ============================== Base ============================== */
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
-body {
-  margin: 0;
-  font-family: "Noto Sans KR", "Noto Sans", Arial, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.7;
-  font-size: 16px;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  transition: background-color .4s ease, color .4s ease;
-  overflow-x: hidden;
-}
-h1, h2, h3, h4 { font-weight: 600; line-height: 1.15; color: var(--text); }
-a { color: var(--accent); text-decoration: none; transition: color .2s ease; }
-a:hover { color: var(--accent-strong); }
-img { max-width: 100%; display: block; }
-::selection { background: var(--accent-soft); }
-
-.wrap { width: min(1080px, 92vw); margin-inline: auto; }
-.section { padding: clamp(3.5rem, 8vw, 6.5rem) 0; }
-.section--alt { background: var(--bg-alt); border-block: 1px solid var(--border); }
-
-/* ============================== Kicker + section heads ============================== */
-.kicker {
-  display: inline-flex; align-items: center;
-  font-weight: 700;
-  font-size: .92rem; letter-spacing: .01em;
-  color: var(--accent);
-}
-.section-title { font-size: clamp(1.8rem, 4vw, 2.5rem); margin: .6rem 0 0; letter-spacing: -0.01em; }
-.section-head { margin-bottom: 2.6rem; max-width: 640px; }
-.section-head p { color: var(--text-soft); margin: .9rem 0 0; font-size: 1.02rem; }
-
-/* ============================== Navbar ============================== */
-.navbar {
-  position: fixed; inset: 0 0 auto 0; z-index: 100;
-  background: var(--nav-bg);
-  backdrop-filter: saturate(160%) blur(14px);
-  -webkit-backdrop-filter: saturate(160%) blur(14px);
-  border-bottom: 1px solid transparent;
-  transition: border-color .3s ease, background-color .3s ease, box-shadow .3s ease;
-}
-.navbar.scrolled { border-bottom-color: var(--border); box-shadow: var(--shadow-sm); }
-.nav-inner { display: flex; align-items: center; justify-content: space-between; height: 66px; }
-.brand { font-weight: 600; font-size: 1.18rem; color: var(--text); letter-spacing: -0.01em; }
-.brand span { color: var(--accent); }
-.nav-links { display: flex; align-items: center; gap: 1.6rem; list-style: none; margin: 0; padding: 0; }
-.nav-links a {
-  font-size: .92rem; font-weight: 500; color: var(--text-soft); position: relative; padding: .2rem 0;
-}
-.nav-links a::after {
-  content: ""; position: absolute; left: 0; bottom: -3px; height: 2px; width: 0; background: var(--accent);
-  border-radius: 2px; transition: width .25s ease;
-}
-.nav-links a:hover, .nav-links a.active { color: var(--text); }
-.nav-links a.active::after, .nav-links a:hover::after { width: 100%; }
-.nav-actions { display: flex; align-items: center; gap: .5rem; }
-
-.icon-btn {
-  display: inline-grid; place-items: center; width: 40px; height: 40px;
-  border: 1px solid var(--border); border-radius: 11px; background: var(--surface);
-  color: var(--text-soft); cursor: pointer; transition: all .2s ease;
-}
-.icon-btn:hover { color: var(--accent); border-color: var(--border-strong); transform: translateY(-1px); }
-.icon-btn svg { width: 18px; height: 18px; }
-.hamburger { display: none; }
-
-/* ============================== Hero ============================== */
-.hero { position: relative; padding-top: 8.5rem; padding-bottom: 4.5rem; overflow: hidden; }
-.hero-grid {
-  position: relative; z-index: 1;
-  display: grid; grid-template-columns: 1.25fr .95fr; gap: clamp(2rem, 5vw, 4.5rem); align-items: start;
-}
-.hero-text .kicker { margin-bottom: 1.1rem; }
-.hero-name { font-size: clamp(2.6rem, 6.5vw, 4.4rem); margin: 0; letter-spacing: -0.02em; font-weight: 600; }
-.hero-role { font-size: clamp(1.1rem, 2.4vw, 1.45rem); color: var(--accent); font-weight: 600; margin: .5rem 0 0; letter-spacing: -0.01em; }
-.hero-affil { color: var(--text-muted); font-weight: 500; font-size: .82em; }
-.hero-lead { color: var(--text-soft); font-size: 1.06rem; margin: 1.4rem 0 0; max-width: 33em; }
-.hero-cta { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
-
-.btn {
-  display: inline-flex; align-items: center; gap: .55rem;
-  font-weight: 600; font-size: .95rem; padding: .72rem 1.3rem; border-radius: 12px;
-  cursor: pointer; transition: all .22s ease; border: 1px solid transparent; white-space: nowrap;
-}
-.btn svg { width: 17px; height: 17px; }
-.btn-primary { background: var(--accent); color: #fff; box-shadow: var(--shadow-sm); }
-.btn-primary:hover { background: var(--accent-strong); color: #fff; transform: translateY(-2px); box-shadow: var(--shadow-md); }
-.btn-ghost { background: var(--surface); color: var(--text); border-color: var(--border-strong); }
-.btn-ghost:hover { border-color: var(--accent); color: var(--accent); transform: translateY(-2px); }
-
-.hero-social { display: flex; gap: .65rem; margin-top: 1.7rem; }
-.hero-social a {
-  display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 11px;
-  border: 1px solid var(--border); background: var(--surface); color: var(--text-soft); transition: all .2s ease;
-}
-.hero-social a:hover { color: var(--accent); border-color: var(--accent); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-.hero-social svg { width: 19px; height: 19px; }
-
-/* Hero photo */
-.hero-photo { position: relative; justify-self: center; width: 100%; max-width: 330px; }
-.hero-photo .frame {
-  position: relative; border-radius: 22px; overflow: hidden; aspect-ratio: 9 / 10;
-  box-shadow: var(--shadow-lg); border: 1px solid var(--border);
-}
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
-
-/* ============================== About / interests ============================== */
-.about-grid { display: grid; grid-template-columns: 1fr; gap: 2.4rem; }
-.about-lead p { font-size: 1.08rem; color: var(--text-soft); margin: 0 0 1rem; }
-.about-lead strong { color: var(--text); font-weight: 600; }
-.interests { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-top: .4rem; }
-.interest {
-  display: flex; gap: .9rem; align-items: flex-start; padding: 1.15rem 1.25rem;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 15px; transition: all .25s ease;
-}
-.interest:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
-.interest .ic {
-  flex: none; width: 38px; height: 38px; border-radius: 10px; display: grid; place-items: center;
-  background: var(--accent-soft); color: var(--accent);
-}
-.interest .ic svg { width: 20px; height: 20px; }
-.interest p { margin: 0; font-weight: 600; font-size: .96rem; line-height: 1.45; padding-top: .35rem; }
-
-/* ============================== Timeline ============================== */
-.timeline { position: relative; display: grid; gap: 1.3rem; }
-.t-item {
-  position: relative; background: var(--surface); border: 1px solid var(--border); border-radius: 18px;
-  padding: 1.5rem 1.7rem; box-shadow: var(--shadow-sm); transition: all .28s ease; overflow: hidden;
-}
-.t-item::before {
-  content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 4px;
-  background: linear-gradient(var(--accent), var(--accent-2)); opacity: 0; transition: opacity .28s ease;
-}
-.t-item:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
-.t-item:hover::before { opacity: 1; }
-.t-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .5rem 1rem; }
-.t-title { font-size: 1.28rem; margin: 0; }
-.t-title a { color: var(--text); }
-.t-title a:hover { color: var(--accent); }
-.t-date {
-  font-size: .8rem; font-weight: 600; color: var(--accent); background: var(--accent-soft);
-  padding: .3rem .7rem; border-radius: 999px; white-space: nowrap; letter-spacing: .01em;
-}
-.t-sub { color: var(--text-soft); font-weight: 600; margin: .25rem 0 0; font-size: .98rem; }
-.t-label { font-size: .85rem; font-weight: 700; letter-spacing: .01em; color: var(--text-muted); margin: 1.1rem 0 .55rem; }
-.tags { display: flex; flex-wrap: wrap; gap: .45rem; }
-.tag {
-  font-size: .8rem; font-weight: 500; color: var(--text-soft); background: var(--surface-2);
-  border: 1px solid var(--border); padding: .28rem .7rem; border-radius: 8px;
-}
-.bullets { margin: .35rem 0 0; padding: 0; list-style: none; }
-.bullets li { position: relative; padding-left: 1.35rem; color: var(--text-soft); margin: .5rem 0; font-size: .96rem; }
-.bullets li::before {
-  content: ""; position: absolute; left: .1rem; top: .62rem; width: 7px; height: 7px; border-radius: 50%;
-  background: var(--accent); opacity: .65;
-}
-.bullets a { font-weight: 600; }
-
-/* ============================== Achievements ============================== */
-.ach-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.3rem; }
-.card {
-  background: var(--surface); border: 1px solid var(--border); border-radius: 18px; padding: 1.6rem 1.7rem;
-  box-shadow: var(--shadow-sm); transition: all .28s ease;
-}
-.card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--border-strong); }
-.card-head { display: flex; align-items: center; gap: .7rem; margin-bottom: 1.1rem; }
-.card-head .ic { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--accent-soft); color: var(--accent); flex: none; }
-.card-head .ic svg { width: 19px; height: 19px; }
-.card-head h3 { font-size: 1.2rem; margin: 0; }
-.card-head .count { margin-left: auto; font-size: .78rem; font-weight: 700; color: var(--text-muted); background: var(--surface-2); border: 1px solid var(--border); padding: .15rem .6rem; border-radius: 999px; }
-.pub-group + .pub-group { margin-top: 1.1rem; }
-.pub-region { font-size: .85rem; font-weight: 700; letter-spacing: .01em; color: var(--text-muted); margin: 0 0 .5rem; }
-.pub-list { margin: 0; padding: 0; list-style: none; counter-reset: pub; }
-.pub-list li {
-  position: relative; padding-left: 1.7rem; margin: .7rem 0; color: var(--text-soft); font-size: .93rem; line-height: 1.62;
-}
-.pub-list li::before {
-  counter-increment: pub; content: counter(pub); position: absolute; left: 0; top: .15rem;
-  width: 1.2rem; height: 1.2rem; font-size: .68rem; font-weight: 700;
-  display: grid; place-items: center; color: var(--accent); background: var(--accent-soft); border-radius: 6px;
-}
-.pub-list.dash { counter-reset: none; }
-.pub-list.dash li::before { counter-increment: none; content: ""; width: 6px; height: 6px; top: .6rem; left: .35rem; border-radius: 50%; background: var(--accent); opacity: .6; }
-.me { color: var(--accent); font-weight: 700; }
-.honor-list li { font-size: .96rem; }
-
-/* ============================== Contact ============================== */
-.contact { text-align: center; }
-.contact .section-title { margin-bottom: .8rem; }
-.contact p { color: var(--text-soft); max-width: 38em; margin: 0 auto 2rem; }
-.contact-actions { display: flex; flex-wrap: wrap; gap: .8rem; justify-content: center; }
-.references { margin-top: 2.2rem; color: var(--text-muted); font-size: .9rem; }
-
-/* ============================== Footer ============================== */
-.footer { border-top: 1px solid var(--border); padding: 2.2rem 0; }
-.footer-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }
-.footer .brand { font-size: 1rem; }
-.footer-meta { color: var(--text-muted); font-size: .86rem; }
-.footer-social { display: flex; gap: .5rem; }
-.footer-social a { color: var(--text-muted); display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; transition: all .2s ease; }
-.footer-social a:hover { color: var(--accent); background: var(--accent-soft); }
-.footer-social svg { width: 17px; height: 17px; }
-
-/* ============================== Mobile menu / responsive ============================== */
-@media (max-width: 860px) {
-  .hero-grid { grid-template-columns: 1fr; gap: 2.6rem; }
-  .hero-photo { order: -1; max-width: 260px; }
-  .hero-text { text-align: left; }
-  .interests, .ach-grid { grid-template-columns: 1fr; }
-  .nav-links {
-    position: fixed; inset: 66px 0 auto 0; flex-direction: column; align-items: stretch; gap: 0;
-    background: var(--bg-alt); border-bottom: 1px solid var(--border); padding: .5rem 0;
-    transform: translateY(-130%); transition: transform .32s cubic-bezier(.4,0,.2,1); box-shadow: var(--shadow-md);
-  }
-  .nav-links.open { transform: translateY(0); }
-  .nav-links li { width: 100%; }
-  .nav-links a { display: block; padding: .85rem 7vw; font-size: 1rem; }
-  .nav-links a::after { display: none; }
-  .nav-links a.active { color: var(--accent); background: var(--accent-soft); }
-  .hamburger { display: inline-grid; }
-}
-@media (max-width: 560px) {
-  .t-item, .card { padding: 1.3rem 1.25rem; }
-  .hero-cta .btn { flex: 1 1 auto; justify-content: center; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  * { scroll-behavior: auto !important; }
-}
-</style>
 <link rel="stylesheet" href="site.css" />
 <script type="application/ld+json">
 {
@@ -310,22 +49,23 @@ img { max-width: 100%; display: block; }
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
 <!-- ============================== Navbar ============================== -->
-<nav class="navbar" id="navbar">
+<nav class="navbar" id="navbar" aria-label="Main navigation">
   <div class="wrap nav-inner">
     <a href="#hero" class="brand">Seon-Ho <span>Yoo</span></a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#current-work">Current Work</a></li>
+      <li><a href="#publications">Publications</a></li>
       <li><a href="#career">Career</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      <button class="icon-btn hamburger" id="hamburger" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">Menu
       </button>
     </div>
   </div>
@@ -335,9 +75,10 @@ img { max-width: 100%; display: block; }
 <header class="hero" id="hero">
   <div class="wrap hero-grid">
     <div class="hero-text">
-      <span class="kicker">Industrial AI Researcher</span>
       <h1 class="hero-name">Seon-Ho Yoo</h1>
-      <p class="hero-role">Reliable Machine Learning &amp; Optimization-aware AI<br><span class="hero-affil">Korea University · Industrial &amp; Management Engineering</span></p>
+      <p class="hero-position">Industrial AI Researcher</p>
+      <p class="hero-affil">Korea University<br>Industrial &amp; Management Engineering</p>
+      <p class="hero-role">Reliable Machine Learning &amp; Optimization-aware AI</p>
       <p class="hero-lead">I build trustworthy and efficient AI methods for structured data and operational decision-making, spanning anomaly detection, robust predictive modeling, and optimization-informed learning for real-world industrial systems.</p>
       <div class="hero-cta">
         <a class="btn btn-primary" href="SeonHoYoo_CV.pdf" target="_blank" rel="noopener">
@@ -350,18 +91,10 @@ img { max-width: 100%; display: block; }
         </a>
       </div>
       <div class="hero-social">
-        <a href="https://github.com/SeonHoYoo" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 8.4 22.9c.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.6-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.5-.3-5.2-1.3-5.2-5.7 0-1.3.4-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.2 5.7.4.3.8 1 .8 2.1v3.1c0 .3.2.7.8.6A11.5 11.5 0 0 0 12 .5z"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/seonhoyoo" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
-          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/db_prefer" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor" stroke="none"/></svg>
-        </a>
-        <a href="mailto:leoyoo2004@korea.ac.kr" aria-label="Email" title="Email">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-        </a>
+        <a href="https://github.com/SeonHoYoo" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/seonhoyoo" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="https://www.instagram.com/db_prefer" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">Instagram</a>
+        <a href="mailto:leoyoo2004@korea.ac.kr" aria-label="Email" title="Email">Email</a>
       </div>
     </div>
     <div class="hero-photo">
@@ -370,7 +103,7 @@ img { max-width: 100%; display: block; }
   </div>
 </header>
 
-<main>
+<main id="main">
 <!-- ============================== About ============================== -->
 <section class="section" id="about">
   <div class="wrap">
@@ -383,24 +116,12 @@ img { max-width: 100%; display: block; }
         <p>I am <strong>Seon-Ho Yoo</strong>, an industrial AI researcher at Korea University focusing on reliable machine learning, anomaly detection, and optimization-informed multi-agent AI for real-world industrial systems.</p>
         <p>My research aims to develop <strong>trustworthy and efficient AI methods</strong> for structured data and operational decision-making problems.</p>
       </div>
-      <div class="interests">
-        <div class="interest">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M8 17v-4"/><path d="M13 17V8"/><path d="M18 17v-7"/></svg></span>
-          <p>Anomaly Detection &amp; Robust Predictive Modeling</p>
-        </div>
-        <div class="interest">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg></span>
-          <p>Optimization-aware Learning &amp; Decision-making</p>
-        </div>
-        <div class="interest">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
-          <p>AI for Operations &amp; Industrial Systems</p>
-        </div>
-        <div class="interest">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>
-          <p>Data-centric Methods for Real-world Applications</p>
-        </div>
-      </div>
+      <ul class="interests">
+        <li><strong>Anomaly Detection &amp; Robust Predictive Modeling</strong></li>
+        <li><strong>Optimization-aware Learning &amp; Decision-making</strong></li>
+        <li><strong>AI for Operations &amp; Industrial Systems</strong></li>
+        <li><strong>Data-centric Methods for Real-world Applications</strong></li>
+      </ul>
     </div>
   </div>
 </section>
@@ -414,22 +135,30 @@ img { max-width: 100%; display: block; }
     </div>
 
     <div class="current-work-groups">
-        <div class="current-list">
-          <article class="current-item">
-            <p class="current-status">Ongoing Research</p>
-            <div>
-              <h3>Reliable Reasoning Models</h3>
-              <p>Developing and evaluating reasoning models for reliable multi-step inference, structured verification, and robust decision-making in complex tasks.</p>
-            </div>
-          </article>
-          <article class="current-item">
-            <p class="current-status">Ongoing Research</p>
-            <div>
-              <h3>Remaining Useful Life Prediction</h3>
-              <p>Studying robust RUL prediction methods that generalize across heterogeneous equipment domains, operating conditions, and limited-data environments.</p>
-            </div>
-          </article>
-        </div>
+      <div class="current-list">
+        <article class="current-item">
+          <h3>Where Search Agents Go Off the Rails: Graph-Grounded Step-Level Verification</h3>
+          <p class="current-status">Under Review</p>
+        </article>
+        <article class="current-item">
+          <h3>Adapting Remaining Useful Life Prediction with Limited Run-to-Failure Data</h3>
+          <p class="current-status">Working Paper</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== Publications ============================== -->
+<section class="section" id="publications">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Publications</h2>
+    </div>
+    <div class="publications-list">
+      <ul class="pub-list">
+            <li><span class="me">Yoo, S.</span>, Joo, S., Ko, K.*, Jeong, T.* (2026). <em>TriMa: Tri-strategy Margin-filtered Pseudo-labeling for Battery Swapping Demand Forecasting.</em> Journal of the Korean Institute of Industrial Engineers (KIIE).</li>
+          </ul>
     </div>
   </div>
 </section>
@@ -438,7 +167,7 @@ img { max-width: 100%; display: block; }
 <section class="section section--alt" id="career">
   <div class="wrap">
     <div class="section-head">
-      <span class="kicker">Experience</span>
+      <span class="kicker">Career</span>
       <h2 class="section-title">Career</h2>
     </div>
     <div class="timeline">
@@ -449,16 +178,8 @@ img { max-width: 100%; display: block; }
           <span class="t-date">Apr. 2026 – Present</span>
         </div>
         <p class="t-sub">Research &amp; Project Associate · Korea University</p>
-        <p class="t-label">Research Area</p>
-        <div class="tags">
-          <span class="tag">Industrial AI &amp; PHM</span>
-          <span class="tag">Data-centric AI</span>
-          <span class="tag">Robust Predictive Modeling</span>
-        </div>
-        <p class="t-label">Research Projects</p>
-        <ul class="bullets">
-          <li>Explored foundation model-based and meta-learning-based approaches for RUL prediction across heterogeneous equipment domains.</li>
-        </ul>
+        <p class="t-sub">Lab Manager · Jul. 2026 – Present</p>
+        <p class="experience-detail">Explored foundation model and meta-learning approaches to remaining useful life prediction across heterogeneous equipment domains.</p>
       </article>
 
       <article class="t-item">
@@ -467,17 +188,7 @@ img { max-width: 100%; display: block; }
           <span class="t-date">Jul. 2025 – Jun. 2026</span>
         </div>
         <p class="t-sub">Research Intern · Seoul National University</p>
-        <p class="t-label">Research Area</p>
-        <div class="tags">
-          <span class="tag">Graph-based Reasoning</span>
-          <span class="tag">Multi-hop QA</span>
-          <span class="tag">Protein Structure Prediction</span>
-        </div>
-        <p class="t-label">Research Projects</p>
-        <ul class="bullets">
-          <li>Designed a robust modeling framework for multi-hop QA by leveraging graph structures in the verification process.</li>
-          <li>Developed an energy-based model for evaluating protein decoys, enabling quantitative assessment of structural plausibility.</li>
-        </ul>
+        <p class="experience-detail">Designed graph-based verification for multi-hop question answering and developed an energy-based model to evaluate protein decoys.</p>
       </article>
 
       <article class="t-item">
@@ -486,18 +197,7 @@ img { max-width: 100%; display: block; }
           <span class="t-date">Sep. 2024 – Aug. 2025</span>
         </div>
         <p class="t-sub">Research Intern · Korea University</p>
-        <p class="t-label">Research Area</p>
-        <div class="tags">
-          <span class="tag">Semi-supervised Learning</span>
-          <span class="tag">Data Augmentation</span>
-          <span class="tag">Demand Forecasting</span>
-          <span class="tag">Optimization</span>
-        </div>
-        <p class="t-label">Research Projects</p>
-        <ul class="bullets">
-          <li>Integrated optimization of future logistics and freight brokerage in multi-supply chain systems: intelligent last-mile and middle-mile algorithms based on 5PL platforms.</li>
-          <li>Location optimization of battery swapping stations for electric two-wheelers in sustainable urban delivery (Industry–Academia Joint Technology Development, LINC 3.0).</li>
-        </ul>
+        <p class="experience-detail">Worked on demand forecasting and logistics optimization for 5PL platforms, and battery-swapping station placement for urban delivery (LINC 3.0).</p>
       </article>
 
     </div>
@@ -516,24 +216,23 @@ img { max-width: 100%; display: block; }
       <article class="t-item">
         <div class="t-top">
           <h3 class="t-title">Korea University</h3>
-          <span class="t-date">Mar. 2027 –</span>
+          <span class="t-date">Expected start: Mar. 2027</span>
         </div>
         <p class="t-sub">Integrated M.S./Ph.D. in Industrial &amp; Management Engineering</p>
         <ul class="bullets">
           <li>Advisor: Prof. Seokhyun Chung.</li>
-          <li>Entered the graduate track through the Integrated B.S./M.S./Ph.D. Program in Jul. 2026.</li>
+          <li>Selected for the Integrated B.S./M.S./Ph.D. Program in Jul. 2026.</li>
         </ul>
       </article>
 
       <article class="t-item">
         <div class="t-top">
           <h3 class="t-title">Korea University</h3>
-          <span class="t-date">Mar. 2023 – Feb. 2027</span>
+          <span class="t-date">Mar. 2023 – Feb. 2027 (expected)</span>
         </div>
         <p class="t-sub">B.S. in Industrial &amp; Management Engineering</p>
         <ul class="bullets">
           <li>Completed all credit requirements for graduation in Feb. 2026.</li>
-          <li>Admitted to the Integrated B.S./M.S./Ph.D. Program in Jul. 2026.</li>
         </ul>
       </article>
 
@@ -550,18 +249,7 @@ img { max-width: 100%; display: block; }
     </div>
     <div class="ach-grid">
 
-      <article class="card">
-        <div class="card-head">
-          <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h11a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4z"/><path d="M20 4h0v13"/></svg></span>
-          <h3>Journal Publications</h3>
-        </div>
-        <div class="pub-group">
-          <p class="pub-region">Domestic</p>
-          <ul class="pub-list">
-            <li><span class="me">Yoo, S.</span>, Joo, S., Ko, K.*, Jeong, T.* (2026). <em>TriMa: Tri-strategy Margin-filtered Pseudo-labeling for Battery Swapping Demand Forecasting.</em> Journal of the Korean Institute of Industrial Engineers (KIIE).</li>
-          </ul>
-        </div>
-      </article>
+
 
       <article class="card">
         <div class="card-head">
@@ -601,6 +289,7 @@ img { max-width: 100%; display: block; }
           <h3>Honors</h3>
         </div>
         <ul class="pub-list dash honor-list">
+          <li><strong>IPESK Next-Generation Engineer</strong>, Institute for Promotion of Engineering and Science of Korea (2026).</li>
           <li><strong>Presidential Science Scholarship</strong>, Ministry of Science and ICT, Korea (2025).</li>
           <li><strong>Sang-Ah Scholarship Foundation</strong>, Scholarship Recipient (2024).</li>
           <li><strong>Academic Excellence Award</strong>, Korea University (2023–2025).</li>
@@ -613,10 +302,9 @@ img { max-width: 100%; display: block; }
 
 <!-- ============================== Contact ============================== -->
 <section class="section" id="contact">
-  <div class="wrap contact">
-    <div>
-      <span class="kicker" style="justify-content:center">Contact</span>
-      <h2 class="section-title">Let&rsquo;s get in touch</h2>
+  <div class="wrap">
+    <div class="section-head"><h2 class="section-title">Contact</h2></div>
+    <div class="contact-copy">
       <p>Open to research collaborations, discussions on industrial AI, and graduate-level opportunities. The fastest way to reach me is by email.</p>
       <div class="contact-actions">
         <a class="btn btn-primary" href="mailto:leoyoo2004@korea.ac.kr">
@@ -653,15 +341,28 @@ img { max-width: 100%; display: block; }
   /* ---- Mobile menu ---- */
   var burger = document.getElementById('hamburger');
   var links = document.getElementById('navLinks');
+  function setMenu(open) {
+    links.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  }
   burger.addEventListener('click', function () {
-    var open = links.classList.toggle('open');
-    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    setMenu(!links.classList.contains('open'));
   });
   links.addEventListener('click', function (e) {
-    if (e.target.tagName === 'A') {
-      links.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
+    if (e.target.closest('a')) setMenu(false);
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && links.classList.contains('open')) {
+      setMenu(false);
+      burger.focus();
     }
+  });
+  document.addEventListener('click', function (e) {
+    if (!e.target.closest('#navbar')) setMenu(false);
+  });
+  window.matchMedia('(min-width: 861px)').addEventListener('change', function () {
+    setMenu(false);
   });
 
   /* ---- Navbar shadow on scroll ---- */
