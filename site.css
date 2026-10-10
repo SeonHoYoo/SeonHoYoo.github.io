@@ -155,3 +155,13 @@ button { font: inherit; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+/* Detail-page navigation preview. */
+.detail-page .current-item h2 { font-size: 17.5px; font-weight: 600; line-height: 1.65; letter-spacing: 0; }
+.detail-page .card-head h2 { font-size: 18px; font-weight: 650; letter-spacing: 0; }
+.detail-back { padding-block: 26px 18px; }
+.detail-back a { font-size: 14px; text-decoration: none; color: var(--muted); }
+.detail-back a:hover { color: var(--accent); }
+.detail-page { min-height: calc(100vh - 165px); }
+.detail-page .section-title { font-size: 28px; letter-spacing: -.025em; }
+.nav-links a[aria-current="page"] { box-shadow: inset 0 -2px var(--accent); font-weight: 600; }
