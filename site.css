@@ -10,9 +10,11 @@
   --text: #25292e;
   --muted: #626870;
   --accent: #344f6b;
-  --line: #e2e5e8;
+  --accent-dark: #1f354b;
+  --line: #e6dddf;
   --paper: #fff;
   --label-width: 240px;
+  --content-width: min(1072px, calc(100% - 48px));
   --column-gap: 36px;
 }
 * { box-sizing: border-box; }
@@ -29,12 +31,12 @@ body {
 h1, h2, h3 { margin: 0; line-height: 1.4; font-weight: 700; letter-spacing: -.015em; }
 p { margin: 0; }
 a { color: var(--accent); text-decoration: underline; text-decoration-color: #b6c0ca; text-underline-offset: 4px; text-decoration-thickness: 1px; }
-a:hover { color: #1f354b; text-decoration-color: currentColor; }
+a:hover { color: var(--accent-dark); text-decoration-color: currentColor; }
 a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
 img { max-width: 100%; display: block; }
 button { font: inherit; }
-::selection { background: #dbe8ed; }
-.wrap { width: min(1072px, calc(100% - 48px)); margin-inline: auto; }
+::selection { background: #f1dbe0; }
+.wrap { width: var(--content-width); margin-inline: auto; }
 .skip-link { position: fixed; top: 10px; left: 20px; transform: translateY(-180%); z-index: 200; padding: 8px 16px; color: white; background: var(--text); }
 .skip-link:focus { transform: translateY(0); }
 
@@ -69,7 +71,7 @@ button { font: inherit; }
 
 /* CV sections: a heading column and plain prose, divided by rules. */
 .section > .wrap { display: grid; grid-template-columns: var(--label-width) minmax(0, 1fr); gap: var(--column-gap); padding-block: 26px; border-top: 1px solid var(--line); }
-#about > .wrap { border-top: 1px solid #aab6c3; }
+#about > .wrap { border-top: 1px solid #d0b7bb; }
 .section-title { font-size: 21px; font-weight: 600; letter-spacing: -.015em; color: var(--text); }
 .section-head .kicker { display: none; }
 .about-lead p + p { margin-top: 12px; }
@@ -138,7 +140,7 @@ button { font: inherit; }
   .section > .wrap { grid-template-columns: 1fr; gap: 14px; }
 }
 @media (max-width: 620px) {
-  .wrap { width: calc(100% - 36px); }
+  :root { --content-width: calc(100% - 36px); }
   .hero-grid { display: flex; flex-direction: column; gap: 20px; }
   .hero-photo { order: -1; width: 200px; }
   .hero-name { font-size: 24px; margin-top: 0; margin-bottom: 15px; }
