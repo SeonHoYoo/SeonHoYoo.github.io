@@ -55,7 +55,7 @@ button { font: inherit; }
 .hero-text { grid-column: 2; grid-row: 1; min-width: 0; }
 .hero-photo .frame { overflow: hidden; }
 .hero-photo img { width: 100%; height: auto; }
-.hero-name { font-size: clamp(30px, 2.7vw, 38px); font-weight: 650; line-height: 1.15; letter-spacing: -.035em; margin: 0 0 16px; color: #243b53; }
+.hero-name { font-size: clamp(28px, 2.55vw, 36px); font-weight: 650; line-height: 1.15; letter-spacing: -.035em; margin: 0 0 16px; color: #243b53; }
 .hero-position { font-size: 18px; font-weight: 550; margin-bottom: 5px; color: var(--text); }
 .hero-affil { color: var(--muted); line-height: 1.65; }
 .hero-role { color: var(--text); font-size: 17px; font-weight: 500; line-height: 1.65; margin-top: 14px; }
@@ -141,7 +141,7 @@ button { font: inherit; }
   .wrap { width: calc(100% - 36px); }
   .hero-grid { display: flex; flex-direction: column; gap: 20px; }
   .hero-photo { order: -1; width: 200px; }
-  .hero-name { font-size: 28px; margin-top: 0; margin-bottom: 15px; }
+  .hero-name { font-size: 26px; margin-top: 0; margin-bottom: 15px; }
   .hero-position { font-size: 18px; }
   .hero-role { margin-top: 15px; }
   .section > .wrap { padding-block: 24px; }
